@@ -64,7 +64,8 @@ class TableViewControllerPersons: UITableViewController {
             if let persons = persons {
                 self.persons = persons.data!
                 print("Count \(self.persons.count)")
-                self.persons.remove(at: 4)
+                // Borramos la posición 5 del array que viene repetida desde la API
+                self.persons.remove(at: 5)
                 self.persons = self.persons.sorted { $0.displayName! < $1.displayName! }
                 for person in self.persons  {
                     connection.getImage(urlString: person.displayIcon!) {[self] (image) in
