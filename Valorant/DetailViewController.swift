@@ -26,10 +26,13 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
     var connection = Connection()
     var agent: Person?
     var loader = Loading()
-    var scroll = ScrollViewController()
+    // Variable que hace uso de la clase de Scroll personalizada
+    //var scroll = ScrollViewController()
     var abilities: [Ability] = []
     var index = 0
     var url:URL?
+    var cellIsSelected: Bool = false
+    
     let sageUrl = "https://www.youtube.com/embed/tKTqzd0Xzl0?playsinline=1"
     let astraUrl = "https://www.youtube.com/embed/-ylVnuPWlJM?start=5&?playsinline=1"
     let breachUrl = "https://www.youtube.com/embed/Rux0HjzKQbw?playsinline=1"
@@ -45,15 +48,22 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
     let sovaUrl = "https://www.youtube.com/embed/OZ76UP-c8Ao?playsinline=1"
     let viperUrl = "https://www.youtube.com/embed/9dOSy0EhLfQ?playsinline=1"
     let yoruUrl = "https://www.youtube.com/embed/GdOEQv-zQVw?start=2&playsinline=1"
+    let kayO = "https://www.youtube.com/embed/AUfDJAn3Upw?start=2&playsinline=1"
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        // Recargamos la tabla cuando vaya a aparecer para evitar tener marcada la selección anterior al volver
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Llamadas para setear el loader usando este controlador para ello
         loader.setupLoadingViews(controller: self)
         loader.showLoading(controller: self)
         descriptionLabel.isHidden = true
-        // Configuración de vídeo
+        
+        // Configuración de vídeo del personaje
         video.configuration.allowsInlineMediaPlayback = true
         setUrl()
         abilities = abilities.sorted { $0.displayName! < $1.displayName! }
@@ -61,19 +71,21 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
        
         
       
-        
+        // La variable de scroll se usaba aquí pero se usó para pruebas
         
         //scrollView.touchesShouldCancel(in: pruebaActionLabel)
         //scrollView.canCancelContentTouches = false
         //scrollView.panGestureRecognizer.delaysTouchesBegan = true
         //scrollView.delaysContentTouches = false
         //scrollView.isExclusiveTouch = false
-        let tap = UITapGestureRecognizer(target: self, action: #selector(funcionTap(_:)))        
+        
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(funcionTap(_:)))
         let tap2 = UITapGestureRecognizer(target: self, action: #selector(funcionTap(_:)))
         let tap3 = UITapGestureRecognizer(target: self, action: #selector(funcionTap(_:)))
         let tap4 = UITapGestureRecognizer(target: self, action: #selector(funcionTap(_:)))
         let tap5 = UITapGestureRecognizer(target: self, action: #selector(funcionTap(_:)))
-        
+
         var gestures = [UITapGestureRecognizer]()
         gestures.append(tap)
         gestures.append(tap2)
@@ -146,6 +158,9 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
         case "Jett":
             url = URL(string: jetUrl)
             break
+        case "KAY/O":
+            url = URL(string: kayO)
+            break
         case "Killjoy":
             print("Kill")
             url = URL(string: killJoyUrl)
@@ -197,9 +212,13 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         cell.backgroundColor = #colorLiteral(red: 0.1963853836, green: 0.1991316676, blue: 0.2378860116, alpha: 1)
         // Cambiamos el color de selección de la celda
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = #colorLiteral(red: 0.9239210486, green: 0.3054641187, blue: 0.3290764093, alpha: 1)
-        cell.selectedBackgroundView = backgroundView
+        // Lo haremos siempre que la variable esté a false para evitar que al volver de la vista de detalle
+        // Se quede la selección anterior marcada
+        if !cellIsSelected {
+            let backgroundView = UIView()
+            backgroundView.backgroundColor = #colorLiteral(red: 0.9239210486, green: 0.3054641187, blue: 0.3290764093, alpha: 1)
+            cell.selectedBackgroundView = backgroundView
+        }
         cell.layer.borderColor = UIColor(named: "TextColor")?.cgColor
         cell.layer.borderWidth = 2.0
         return cell
@@ -217,6 +236,10 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
             if let detailAbilityVLC = segue.destination as? AbilityViewController {
                 detailAbilityVLC.ability = abilities[indexPath]
                 detailAbilityVLC.urlImagePerson = agent?.fullPortrait
+                // Al seleccionar una celda, seteamos la variable a true para evitar que exista
+                // esta selección en la tabla al volver
+                cellIsSelected = true
+                print("Celda seleccionada, la variable está \(cellIsSelected)")
             }
         }
      }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6526518F261F4E6100537FC8 /* AbilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6526518E261F4E6100537FC8 /* AbilityViewController.swift */; };
 		6556BF88261CFE020064B29D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556BF87261CFE020064B29D /* DetailViewController.swift */; };
-		6556BF8F261D12230064B29D /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556BF8E261D12230064B29D /* Scroll.swift */; };
 		6560FC26261B6E8000E222FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560FC25261B6E8000E222FC /* AppDelegate.swift */; };
 		6560FC28261B6E8000E222FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560FC27261B6E8000E222FC /* SceneDelegate.swift */; };
 		6560FC2A261B6E8000E222FC /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560FC29261B6E8000E222FC /* InitViewController.swift */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		6526518E261F4E6100537FC8 /* AbilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityViewController.swift; sourceTree = "<group>"; };
 		6556BF87261CFE020064B29D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		6556BF8E261D12230064B29D /* Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
 		6560FC22261B6E8000E222FC /* Valorant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valorant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6560FC25261B6E8000E222FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6560FC27261B6E8000E222FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				65AC3E47261C8E54004DBAA1 /* Loading.swift */,
 				6560FC49261B752600E222FC /* Data.swift */,
 				6556BF87261CFE020064B29D /* DetailViewController.swift */,
-				6556BF8E261D12230064B29D /* Scroll.swift */,
 				658C0A57261E58F80024D12A /* pruebasViewController.swift */,
 				658C0A5B261E68840024D12A /* PaddingLabel.swift */,
 				6526518E261F4E6100537FC8 /* AbilityViewController.swift */,
@@ -178,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6556BF88261CFE020064B29D /* DetailViewController.swift in Sources */,
-				6556BF8F261D12230064B29D /* Scroll.swift in Sources */,
 				65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */,
 				6560FC3F261B710500E222FC /* TableViewControllerPersons.swift in Sources */,
 				6526518F261F4E6100537FC8 /* AbilityViewController.swift in Sources */,
