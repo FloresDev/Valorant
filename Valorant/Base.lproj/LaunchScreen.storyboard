@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,18 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="LLn-lw-fcG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoDetalle" translatesAutoresizingMaskIntoConstraints="NO" id="LLn-lw-fcG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" red="0.19638538359999999" green="0.19913166760000001" blue="0.2378860116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALORANT HOUND" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1r-sb-hbo">
+                                <rect key="frame" x="16" y="44" width="383" height="173"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="85"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="TextColor"/>
+                                <size key="shadowOffset" width="5" height="3"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="U1r-sb-hbo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CG3-Uz-LOL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LLn-lw-fcG" secondAttribute="bottom" id="GDc-Tz-CY7"/>
                             <constraint firstItem="LLn-lw-fcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IL9-MC-01l"/>
                             <constraint firstItem="LLn-lw-fcG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="NdA-u1-ZeV"/>
+                            <constraint firstItem="U1r-sb-hbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ng0-y5-A1R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLn-lw-fcG" secondAttribute="trailing" id="a1N-hu-d47"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1r-sb-hbo" secondAttribute="trailing" constant="15" id="bLA-gc-gey"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,7 +49,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cover" width="426.66665649414062" height="215.66667175292969"/>
+        <image name="fondoDetalle" width="172" height="172"/>
+        <namedColor name="TextColor">
+            <color red="0.92400002479553223" green="0.3059999942779541" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

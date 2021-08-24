@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pjm-B9-4ue">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pjm-B9-4ue">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,24 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentation.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-s1-wf7" customClass="ImageView" customModule="Valorant" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentation1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-s1-wf7" customClass="ImageView" customModule="Valorant" customModuleProvider="target">
                                 <rect key="frame" x="-50" y="0.0" width="514" height="896"/>
                                 <color key="backgroundColor" red="0.90835052729999999" green="0.25717690589999997" blue="0.31175470350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="rhD-Fh-g8I">
                                 <rect key="frame" x="82" y="315.5" width="250" height="265"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ0-fl-vA9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdP-So-TIg">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="35"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="pgs-Wh-7fE"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                         <size key="titleShadowOffset" width="2" height="0.0"/>
-                                        <state key="normal" title="Ver grafitis">
+                                        <state key="normal" title="Ver personajes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="animateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pi6-0x-sjH"/>
+                                            <action selector="animateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2c-3R-AEk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDz-Yf-DXu">
@@ -48,22 +52,20 @@
                                         </state>
                                         <connections>
                                             <action selector="animateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYd-Cb-vxA"/>
+                                            <segue destination="pB9-Pg-hpX" kind="show" id="fHw-sb-rKm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdP-So-TIg">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ0-fl-vA9">
                                         <rect key="frame" x="0.0" y="230" width="250" height="35"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="pgs-Wh-7fE"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                         <size key="titleShadowOffset" width="2" height="0.0"/>
-                                        <state key="normal" title="Ver personajes">
+                                        <state key="normal" title="Ver grafitis">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="animateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2c-3R-AEk"/>
+                                            <action selector="animateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pi6-0x-sjH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -112,6 +114,117 @@
             </objects>
             <point key="canvasLocation" x="1046.6517857142858" y="92.753623188405811"/>
         </scene>
+        <!--Weapons List View Controller-->
+        <scene sceneID="Ebi-p7-GEl">
+            <objects>
+                <viewController id="pB9-Pg-hpX" customClass="WeaponsListViewController" customModule="Valorant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vv6-ym-4w5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="valorant-generacion-xbox" translatesAutoresizingMaskIntoConstraints="NO" id="4z2-2L-EnH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEAPONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-Ow-vmk">
+                                <rect key="frame" x="20" y="112" width="374" height="80"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="77"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="TextColor"/>
+                                <size key="shadowOffset" width="5" height="3"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aIL-hF-pgF">
+                                <rect key="frame" x="20" y="230" width="374" height="436"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="436" id="MlK-sI-itw"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RN8-Fk-Dkp">
+                                    <size key="itemSize" width="181" height="181"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="weaponsCell" id="bxv-te-Lfe" customClass="WeaponsListCollectionViewCell" customModule="Valorant" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="181" height="181"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="CGC-fE-HM9">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmD-cV-MPJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="TextColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPK-n9-uI3">
+                                                    <rect key="frame" x="8" y="8" width="165" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.13799345490000001" green="0.1608571708" blue="0.18842223289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <size key="shadowOffset" width="5" height="3"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9l4-nv-ABw">
+                                                    <rect key="frame" x="8" y="55" width="165" height="118"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="181" height="181"/>
+                                        <connections>
+                                            <outlet property="weaponImage" destination="9l4-nv-ABw" id="1Le-lx-hRB"/>
+                                            <outlet property="weaponName" destination="nPK-n9-uI3" id="0X5-zQ-OJ1"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header01" id="Phj-gR-YCp" customClass="HeaderWeaponsListCollectionReusableView" customModule="Valorant" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rifles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbx-1n-6iJ">
+                                            <rect key="frame" x="8" y="8" width="358" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="35"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="hpol"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="headerTitle01" destination="Cbx-1n-6iJ" id="7dk-SO-ZcX"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vPD-35-VxR"/>
+                        <color key="backgroundColor" red="0.13799345490000001" green="0.1608571708" blue="0.18842223289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rgc-Ow-vmk" firstAttribute="leading" secondItem="vPD-35-VxR" secondAttribute="leading" constant="20" id="0n2-dW-zpp"/>
+                            <constraint firstAttribute="bottom" secondItem="4z2-2L-EnH" secondAttribute="bottom" id="4Ke-JE-064"/>
+                            <constraint firstItem="vPD-35-VxR" firstAttribute="trailing" secondItem="aIL-hF-pgF" secondAttribute="trailing" constant="20" id="G4n-cz-k3B"/>
+                            <constraint firstItem="aIL-hF-pgF" firstAttribute="leading" secondItem="vPD-35-VxR" secondAttribute="leading" constant="20" id="GIY-YA-8AX"/>
+                            <constraint firstItem="vPD-35-VxR" firstAttribute="trailing" secondItem="rgc-Ow-vmk" secondAttribute="trailing" constant="20" id="OB7-n4-RoG"/>
+                            <constraint firstItem="rgc-Ow-vmk" firstAttribute="top" secondItem="vPD-35-VxR" secondAttribute="top" constant="24" id="QbT-iP-E5n"/>
+                            <constraint firstItem="aIL-hF-pgF" firstAttribute="top" secondItem="rgc-Ow-vmk" secondAttribute="bottom" constant="38" id="V3c-Q2-0sZ"/>
+                            <constraint firstItem="4z2-2L-EnH" firstAttribute="leading" secondItem="vPD-35-VxR" secondAttribute="leading" id="gIu-JT-dbH"/>
+                            <constraint firstItem="4z2-2L-EnH" firstAttribute="top" secondItem="Vv6-ym-4w5" secondAttribute="top" id="reV-dt-Rkw"/>
+                            <constraint firstItem="4z2-2L-EnH" firstAttribute="trailing" secondItem="vPD-35-VxR" secondAttribute="trailing" id="xR5-7Z-PFR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yuo-ia-Xwb"/>
+                    <connections>
+                        <outlet property="collectionView" destination="aIL-hF-pgF" id="Epy-51-5lj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irf-3l-WD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2169.5652173913045" y="554.46428571428567"/>
+        </scene>
         <!--Table View Controller Persons-->
         <scene sceneID="B0g-r7-4eV">
             <objects>
@@ -123,7 +236,7 @@
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgentCell" rowHeight="129" id="3tH-6I-XSa" customClass="MyTableViewCellPersons" customModule="Valorant" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="129"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3tH-6I-XSa" id="Voc-eY-pWz">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
@@ -249,7 +362,7 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" id="MEp-Rp-pZT">
-                                                        <rect key="frame" x="0.0" y="28" width="398" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="24.5" width="398" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MEp-Rp-pZT" id="KGI-Nn-sLC">
                                                             <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
@@ -496,7 +609,8 @@
     <resources>
         <image name="cover" width="426.66665649414062" height="215.66667175292969"/>
         <image name="fondoDetalle" width="172" height="172"/>
-        <image name="presentation.gif" width="1920" height="1080"/>
+        <image name="presentation1.gif" width="720" height="405"/>
+        <image name="valorant-generacion-xbox" width="1369" height="1077"/>
         <namedColor name="TextColor">
             <color red="0.92400002479553223" green="0.3059999942779541" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

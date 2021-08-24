@@ -23,7 +23,7 @@ class InitViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.bg.loadGif(name: "presentation")
+        self.bg.loadGif(name: "presentation1")
         setButtons()
         
     }
