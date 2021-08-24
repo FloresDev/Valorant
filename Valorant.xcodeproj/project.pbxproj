@@ -25,6 +25,7 @@
 		65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 65AC3E3D261C7688004DBAA1 /* presentation.gif */; };
 		65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E40261C7747004DBAA1 /* Gift.swift */; };
 		65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E47261C8E54004DBAA1 /* Loading.swift */; };
+		65FFDB2B26D55978004A128A /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		65AC3E3D261C7688004DBAA1 /* presentation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation.gif; sourceTree = SOURCE_ROOT; };
 		65AC3E40261C7747004DBAA1 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		65AC3E47261C8E54004DBAA1 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				6560FC43261B74BA00E222FC /* Mappable.swift */,
 				6560FC46261B74FB00E222FC /* Connection.swift */,
 				65AC3E40261C7747004DBAA1 /* Gift.swift */,
+				65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */,
 				65AC3E47261C8E54004DBAA1 /* Loading.swift */,
 				6560FC49261B752600E222FC /* Data.swift */,
 				6556BF87261CFE020064B29D /* DetailViewController.swift */,
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FFDB2B26D55978004A128A /* SovaFlechas.mp4 in Resources */,
 				65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */,
 				6560FC32261B6E8400E222FC /* LaunchScreen.storyboard in Resources */,
 				6560FC2F261B6E8400E222FC /* Assets.xcassets in Resources */,
