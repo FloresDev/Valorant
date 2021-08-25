@@ -68,6 +68,7 @@ class Weapon: Mappable {
     var category: String?
     var displayIcon: String?
     var image: UIImage?
+    var shopData: ShopData?
     
     // OJO EL CODING KEY ES NECESARIO PARA METER UNA IMAGEN EN LA CLASE MAPPABLE
     // DEBERÁ CONTEMPLAR TODAS LAS VARIABLES MENOS LA DE LA IMAGEN
@@ -76,7 +77,12 @@ class Weapon: Mappable {
         case displayName
         case category
         case displayIcon
+        case shopData
        
+    }
+    
+    class ShopData: Mappable{
+        var cost: Int?
     }
     
 }

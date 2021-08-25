@@ -19,9 +19,11 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
     var segm3 = false
     var segm4 = false
     var segm5 = false
+    var segm6 = false
     var numSelected = 0
     var weaponsNameArr: [String?] = []
     var weaponsImaArr: [UIImage?] = []
+    var weaponsCost: [Int?] = []
     var weaponsnum = 0
     var refreshControl = UIRefreshControl()
     
@@ -32,13 +34,14 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        WeaponsNewArr()
+       
         
         if imageDonwlodaded < MAX_IMAGE_DATA {
             self.loading.setupLoadingViews(controller: self)
             self.loading.showLoading(controller: self)
             
+        }else{
+            WeaponsNewArr()
         }
     }
     
@@ -48,7 +51,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         segmentOutlet.selectedSegmentIndex = numSelected
         
-        viewDidLoad()
+
         
     }
     
@@ -64,10 +67,18 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "weaponsCell", for: indexPath) as! WeaponsListCollectionViewCell
         
-        if segm0 == true || segm1 == true || segm2 == true || segm3 == true || segm4 == true || segm5 == true{
+        if segm0 == true || segm1 == true || segm2 == true || segm3 == true || segm4 == true || segm5 == true || segm6 == true{
             
             cell.weaponImage.image = weaponsImaArr[indexPath.row]
             cell.weaponName.text = weaponsNameArr[indexPath.row]
+            let cost = weaponsCost[indexPath.row]
+            
+            if cost != 0{
+                cell.weaponCost.text = "Coste: \(weaponsCost[indexPath.row] ?? 0)"
+                
+            }else{
+                cell.weaponCost.text = "Coste: Gratis"
+            }
             cell.layer.cornerRadius = 10
         }
         return cell
@@ -92,7 +103,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         if imageDonwlodaded >= MAX_IMAGE_DATA {
                             DispatchQueue.main.async {
                                 self.loading.hideLoading()
-                                collectionView.reloadData()
+                                weaponsNameArr.removeAll()
                                 viewDidLoad()
                                 
                             }
@@ -114,8 +125,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             segm3 = false
             segm4 = false
             segm5 = false
+            segm6 = false
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
             viewDidLoad()
             
         }
@@ -129,8 +142,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             segm3 = false
             segm4 = false
             segm5 = false
+            segm6 = false
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
             viewDidLoad()
             
         }
@@ -144,8 +159,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             segm3 = false
             segm4 = false
             segm5 = false
+            segm6 = false
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
             viewDidLoad()
             
         }
@@ -159,8 +176,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             segm0 = false
             segm4 = false
             segm5 = false
+            segm6 = false
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
             viewDidLoad()
             
         }
@@ -174,8 +193,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             segm0 = false
             segm4 = true
             segm5 = false
+            segm6 = false
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
             viewDidLoad()
             
         }
@@ -189,8 +210,28 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             segm0 = false
             segm4 = false
             segm5 = true
+            segm6 = false
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
+            viewDidLoad()
+            
+        }
+        
+        
+        if segmentOutlet.selectedSegmentIndex == 6{
+            
+            numSelected = 6
+            segm3 = false
+            segm2 = false
+            segm1 = false
+            segm0 = false
+            segm4 = false
+            segm5 = false
+            segm6 = true
+            weaponsNameArr.removeAll()
+            weaponsImaArr.removeAll()
+            weaponsCost.removeAll()
             viewDidLoad()
             
         }
@@ -207,6 +248,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
+                        self.weaponsCost.append(weapons[i].shopData?.cost)
                         collectionView.reloadData()
                     }
                 }
@@ -216,6 +258,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
+                        self.weaponsCost.append(weapons[i].shopData?.cost)
                         collectionView.reloadData()
                     }
                 }
@@ -225,6 +268,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
+                        self.weaponsCost.append(weapons[i].shopData?.cost)
                         collectionView.reloadData()
                     }
                 }
@@ -234,6 +278,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
+                        self.weaponsCost.append(weapons[i].shopData?.cost)
                         collectionView.reloadData()
                     }
                 }
@@ -243,19 +288,32 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
+                        self.weaponsCost.append(weapons[i].shopData?.cost)
                         collectionView.reloadData()
                     }
                 }
                 
-                if weapons[i].category == "EEquippableCategory::Melee", segm5 == true{
+                if weapons[i].category == "EEquippableCategory::Shotgun", segm5 == true{
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
+                        self.weaponsCost.append(weapons[i].shopData?.cost)
                         collectionView.reloadData()
+                    }
+                }
+                    
+                    if weapons[i].category == "EEquippableCategory::Melee", segm6 == true{
+                        self.weaponsnum = i
+                        for i in self.weaponsnum...self.weaponsnum{
+                            self.weaponsNameArr.append(weapons[i].displayName)
+                            self.weaponsImaArr.append(weapons[i].image)
+                            self.weaponsCost.append(weapons[i].shopData?.cost)
+                            collectionView.reloadData()
+                        }
                     }
                 }
             }
         }
     }
-}
+
