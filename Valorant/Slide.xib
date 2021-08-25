@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="Valorant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcu-6m-fCQ">
+                    <rect key="frame" x="-7" y="0.0" width="421" height="922"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-SV-Fmu">
+                    <rect key="frame" x="32" y="403" width="350" height="266"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="266" id="O6h-QV-SBp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-MZ-B3b">
+                    <rect key="frame" x="8" y="124" width="398" height="93"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="90"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" name="TextColor"/>
+                    <size key="shadowOffset" width="5" height="3"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Yk-MZ-B3b" secondAttribute="trailing" constant="8" id="37A-1k-IWM"/>
+                <constraint firstItem="vpv-SV-Fmu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="CQ8-VQ-g3H"/>
+                <constraint firstItem="4Yk-MZ-B3b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="cLR-Hh-A8N"/>
+                <constraint firstItem="vpv-SV-Fmu" firstAttribute="top" secondItem="4Yk-MZ-B3b" secondAttribute="bottom" constant="186" id="ml4-xm-LWh"/>
+                <constraint firstItem="4Yk-MZ-B3b" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="80" id="tnL-kV-uER"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vpv-SV-Fmu" secondAttribute="trailing" constant="32" id="yHm-cc-Vpg"/>
+            </constraints>
+            <connections>
+                <outlet property="mapBakcground" destination="rcu-6m-fCQ" id="afd-mx-X8d"/>
+                <outlet property="mapIconImage" destination="vpv-SV-Fmu" id="yBV-uJ-jgH"/>
+                <outlet property="mapName" destination="4Yk-MZ-B3b" id="mbc-kV-4Kt"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextColor">
+            <color red="0.92400002479553223" green="0.3059999942779541" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -56,3 +56,28 @@ class Ability: Mappable {
     
 }
 
+class Maps: Mappable {
+    
+    var data: [Map]?
+}
+
+class Map: Mappable {
+    
+    var displayName: String?
+    var coordinates: String?
+    var displayIcon: String?
+    var splash: String?
+    var artImage: UIImage?
+    var mapIcon: UIImage?
+    
+    // OJO EL CODING KEY ES NECESARIO PARA METER UNA IMAGEN EN LA CLASE MAPPABLE
+    // DEBERÁ CONTEMPLAR TODAS LAS VARIABLES MENOS LA DE LA IMAGEN
+    private enum CodingKeys: String, CodingKey {
+        
+        case displayName
+        case coordinates
+        case displayIcon
+        case splash
+    }
+}
+
