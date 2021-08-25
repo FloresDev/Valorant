@@ -26,6 +26,7 @@
 		65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E40261C7747004DBAA1 /* Gift.swift */; };
 		65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E47261C8E54004DBAA1 /* Loading.swift */; };
 		65FFDB2B26D55978004A128A /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */; };
+		CFF11A8426D6D4D20029759E /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFF11A8326D6D4D20029759E /* Valorant Font.ttf */; };
 		CFFF724926D59B7200A42EFA /* presentation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFFF724826D59B7200A42EFA /* presentation1.gif */; };
 		CFFF724D26D59DAB00A42EFA /* WeaponsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF724C26D59DAB00A42EFA /* WeaponsListViewController.swift */; };
 		CFFF724F26D59E9D00A42EFA /* WeaponsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF724E26D59E9D00A42EFA /* WeaponsListCollectionViewCell.swift */; };
@@ -53,6 +54,7 @@
 		65AC3E40261C7747004DBAA1 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		65AC3E47261C8E54004DBAA1 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
+		CFF11A8326D6D4D20029759E /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		CFFF724826D59B7200A42EFA /* presentation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation1.gif; sourceTree = "<group>"; };
 		CFFF724C26D59DAB00A42EFA /* WeaponsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListViewController.swift; sourceTree = "<group>"; };
 		CFFF724E26D59E9D00A42EFA /* WeaponsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				6560FC2E261B6E8400E222FC /* Assets.xcassets */,
 				6560FC30261B6E8400E222FC /* LaunchScreen.storyboard */,
 				6560FC33261B6E8400E222FC /* Info.plist */,
+				CFF11A8326D6D4D20029759E /* Valorant Font.ttf */,
 			);
 			path = Valorant;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				65FFDB2B26D55978004A128A /* SovaFlechas.mp4 in Resources */,
 				65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */,
+				CFF11A8426D6D4D20029759E /* Valorant Font.ttf in Resources */,
 				6560FC32261B6E8400E222FC /* LaunchScreen.storyboard in Resources */,
 				6560FC2F261B6E8400E222FC /* Assets.xcassets in Resources */,
 				CFFF724926D59B7200A42EFA /* presentation1.gif in Resources */,
