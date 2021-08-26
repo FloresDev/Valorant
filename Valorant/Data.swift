@@ -56,6 +56,7 @@ class Ability: Mappable {
     
 }
 
+
 class Weapons: Mappable {
     
     var data: [Weapon]?
@@ -73,10 +74,26 @@ class Weapon: Mappable {
     var displayIcon: String?
     var image: UIImage?
     var shopData: ShopData?
+=======
+class Maps: Mappable {
+    
+    var data: [Map]?
+}
+
+class Map: Mappable {
+    
+    var displayName: String?
+    var coordinates: String?
+    var displayIcon: String?
+    var splash: String?
+    var artImage: UIImage?
+    var mapIcon: UIImage?
+
     
     // OJO EL CODING KEY ES NECESARIO PARA METER UNA IMAGEN EN LA CLASE MAPPABLE
     // DEBERÁ CONTEMPLAR TODAS LAS VARIABLES MENOS LA DE LA IMAGEN
     private enum CodingKeys: String, CodingKey {
+
         case uuid
         case displayName
         case category
@@ -89,5 +106,13 @@ class Weapon: Mappable {
         var cost: Int?
     }
     
+=======
+        
+        case displayName
+        case coordinates
+        case displayIcon
+        case splash
+    }
+
 }
 

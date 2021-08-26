@@ -27,12 +27,12 @@ class Loading {
         
         // Container que va a contener a todo lo demás con el difuminado para que lo de atrás no se vea
         container.frame = CGRect(x: controller.view.frame.origin.x, y: controller.view.frame.origin.y, width: controller.view.frame.width, height: controller.view.frame.height)
-        container.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1)
+        container.backgroundColor = #colorLiteral(red: 0.934802711, green: 0.3080254197, blue: 0.3367152214, alpha: 1)
         
         // LoadingView
         loadingView.frame = CGRect(x: 0, y: 0, width: 180, height: 180)
         loadingView.center.x = container.center.x
-        loadingView.center.y = container.center.y - 50
+        loadingView.center.y = container.center.y 
         loadingView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.7)
         // Le decimos que establezca a true el clip to bounds para que no se salga de los márgenes
         loadingView.clipsToBounds = true

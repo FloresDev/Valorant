@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pjm-B9-4ue">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pjm-B9-4ue">
+
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -23,7 +27,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentation1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-s1-wf7" customClass="ImageView" customModule="Valorant" customModuleProvider="target">
+
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentation.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-s1-wf7" customClass="ImageView" customModule="Valorant" customModuleProvider="target">
+
                                 <rect key="frame" x="-50" y="0.0" width="514" height="896"/>
                                 <color key="backgroundColor" red="0.90835052729999999" green="0.25717690589999997" blue="0.31175470350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -38,7 +46,11 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                         <size key="titleShadowOffset" width="2" height="0.0"/>
+
                                         <state key="normal" title="Ver personajes">
+
+                                        <state key="normal" title="Ver mapas">
+
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -113,6 +125,7 @@
                         <outletCollection property="initButtons" destination="FDz-Yf-DXu" collectionClass="NSMutableArray" id="2RO-T3-rdn"/>
                         <outletCollection property="initButtons" destination="tZ0-fl-vA9" collectionClass="NSMutableArray" id="RQc-NZ-1E9"/>
                         <segue destination="IO9-UC-sE7" kind="show" identifier="goToPersonTable" id="Y7u-CF-QIi"/>
+                        <segue destination="ZYK-hb-XP9" kind="show" identifier="goToMaps" id="Pcy-Bb-5wp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -415,7 +428,11 @@
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgentCell" rowHeight="129" id="3tH-6I-XSa" customClass="MyTableViewCellPersons" customModule="Valorant" customModuleProvider="target">
+
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="129"/>
+=======
+                                <rect key="frame" x="0.0" y="28" width="414" height="129"/>
+
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3tH-6I-XSa" id="Voc-eY-pWz">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
@@ -500,7 +517,11 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-en-g99">
                                                 <rect key="frame" x="8" y="327" width="398" height="42"/>
+
                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="39"/>
+=======
+                                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="39"/>
+
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" name="TextColor"/>
@@ -541,7 +562,11 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" id="MEp-Rp-pZT">
+
                                                         <rect key="frame" x="0.0" y="24.5" width="398" height="43.5"/>
+=======
+                                                        <rect key="frame" x="0.0" y="28" width="398" height="43.5"/>
+
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MEp-Rp-pZT" id="KGI-Nn-sLC">
                                                             <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
@@ -783,11 +808,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qc-mb-IwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4104.347826086957" y="-557.14285714285711"/>
+
+=======
+        </scene>
+        <!--Mapas-->
+        <scene sceneID="Oxq-us-zFC">
+            <objects>
+                <viewController id="ZYK-hb-XP9" customClass="MapsViewController" customModule="Valorant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1E8-WK-gl9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="yzc-Yq-aWd">
+                                <rect key="frame" x="108" y="784" width="198" height="28"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.78446823359999995" green="0.28529229760000002" blue="0.32422125340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUI-D3-U31">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vcQ-1y-4G4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="896" id="VcD-No-iBk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vcQ-1y-4G4" firstAttribute="leading" secondItem="rF0-mr-S40" secondAttribute="leading" id="Lm9-U2-Lqh"/>
+                                    <constraint firstItem="vcQ-1y-4G4" firstAttribute="bottom" secondItem="rF0-mr-S40" secondAttribute="bottom" constant="896" id="Mo3-TA-BXA"/>
+                                    <constraint firstItem="vcQ-1y-4G4" firstAttribute="width" secondItem="Jef-qb-Cq5" secondAttribute="width" id="Pq2-72-Kkw"/>
+                                    <constraint firstItem="vcQ-1y-4G4" firstAttribute="trailing" secondItem="rF0-mr-S40" secondAttribute="trailing" constant="414" id="ZtN-wU-H2p"/>
+                                    <constraint firstItem="vcQ-1y-4G4" firstAttribute="top" secondItem="rF0-mr-S40" secondAttribute="top" id="rfM-Bk-8BX"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rF0-mr-S40"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Jef-qb-Cq5"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jaL-ep-sRZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yzc-Yq-aWd" firstAttribute="centerX" secondItem="1E8-WK-gl9" secondAttribute="centerX" id="QB2-w1-toj"/>
+                            <constraint firstItem="jaL-ep-sRZ" firstAttribute="bottom" secondItem="yzc-Yq-aWd" secondAttribute="bottom" constant="50" id="xJI-nv-rcQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mapas" id="0fj-YS-hn5"/>
+                    <connections>
+                        <outlet property="pageControl" destination="yzc-Yq-aWd" id="94N-6m-MGp"/>
+                        <outlet property="scroll" destination="rUI-D3-U31" id="G2s-wG-Q2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYb-Gu-kph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137.68115942029" y="305.35714285714283"/>
+
         </scene>
     </scenes>
     <resources>
         <image name="cover" width="426.66665649414062" height="215.66667175292969"/>
         <image name="fondoDetalle" width="172" height="172"/>
+
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="presentation1.gif" width="720" height="405"/>
         <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
@@ -795,6 +876,9 @@
         <namedColor name="CellBackground">
             <color red="0.19599999487400055" green="0.19900000095367432" blue="0.23800000548362732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+=======
+        <image name="presentation.gif" width="1920" height="1080"/>
+
         <namedColor name="TextColor">
             <color red="0.92400002479553223" green="0.3059999942779541" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

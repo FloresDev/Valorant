@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class InitViewController: UIViewController {
     
@@ -60,6 +61,17 @@ class InitViewController: UIViewController {
                             if sender.transform.isIdentity {
                                 if sender.currentTitle == "Ver personajes" {
                                     self.performSegue(withIdentifier: "goToPersonTable", sender: self)
+                                }
+                                // Comprobamos si el botón se llama Ver mapas para acceder a la vista de SwiftUI
+                                if sender.currentTitle == "Ver mapas" {
+                                    print("Pulso el botón de los mapas")
+                                    self.performSegue(withIdentifier: "goToMaps", sender: self)
+                                    
+                                    // Creamos constante con la vista de SwiftUI
+//                                    let mapsView = MapsControllerSwiftUI()
+//
+//                                    let host = UIHostingController(rootView: mapsView)
+//                                    self.navigationController?.pushViewController(host, animated: true)
                                 }
                                 
                                 
