@@ -37,8 +37,6 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
         connectionForMaps()
         self.loader.setupLoadingViews(controller: self)
         self.loader.showLoading(controller: self)
-        //shadowImage(imagen: iconMapImage)
-        
     }
     
     func connectionForMaps() {
@@ -63,7 +61,7 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
                                     self.loader.hideLoading()
                                     slides = createSlides()
                                     setupSlideScrollView(slides: slides)
-                                    
+                                    addTapFunction(slides: slides)
                                     pageControl.numberOfPages = slides.count
                                     pageControl.currentPage = 0
                                     view.bringSubviewToFront(pageControl)
@@ -191,4 +189,20 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
                     
         }
     }
+    
+    func addTapFunction(slides: [Slide]){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
+        for slide in slides {
+            slide.mapIconImage.addGestureRecognizer(tap)
+            slide.isUserInteractionEnabled = true
+            print("He agregado el gesto")
+        }
+    }
+    
+    @objc func tappedMe()
+    {
+        print("Tapped on Image")
+    }
+    
+    
 }
