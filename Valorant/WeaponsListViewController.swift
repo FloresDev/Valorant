@@ -28,6 +28,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
     var weaponsCost: [Int?] = []
     var weaponsnum = 0
     var refreshControl = UIRefreshControl()
+    var type = ""
     
     
     
@@ -267,6 +268,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             for i in 0...weapons.count - 1{
                 
                 if weapons[i].category == "EEquippableCategory::Sidearm", segm0 == true{
+                    type = "Sidearm"
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
@@ -278,6 +280,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                 
                 if weapons[i].category == "EEquippableCategory::Rifle", segm1 == true{
+                    type = "Rifle"
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
@@ -289,6 +292,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                 
                 if weapons[i].category == "EEquippableCategory::SMG", segm2 == true{
+                    type = "SMG"
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
@@ -300,6 +304,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                 
                 if weapons[i].category == "EEquippableCategory::Sniper", segm3 == true{
+                    type = "Sniper"
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
@@ -311,6 +316,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                 
                 if weapons[i].category == "EEquippableCategory::Heavy", segm4 == true{
+                    type = "Heavy"
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
@@ -322,6 +328,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                 
                 if weapons[i].category == "EEquippableCategory::Shotgun", segm5 == true{
+                    type = "Shotgun"
                     self.weaponsnum = i
                     for i in self.weaponsnum...self.weaponsnum{
                         self.weaponsNameArr.append(weapons[i].displayName)
@@ -333,6 +340,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                     
                     if weapons[i].category == "EEquippableCategory::Melee", segm6 == true{
+                        type = "Melee"
                         self.weaponsnum = i
                         for i in self.weaponsnum...self.weaponsnum{
                             self.weaponsNameArr.append(weapons[i].displayName)
@@ -352,6 +360,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
        
        if let detailVLC = segue.destination as? WeaponDetailViewController {
         detailVLC.weaponuuid = self.weaponsUidArr[indexPath.row]
+        detailVLC.type = self.type
        }
     }
     
