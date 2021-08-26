@@ -25,6 +25,7 @@ class WeaponDetailViewController: UIViewController {
     let spanishLanguage = "language=es-ES"
     var weapon: WeaponDow?
     // Cambio hecho por Dani
+    // Cambio 2 hecho por Dani
     
     override func viewDidLoad() {
         super.viewDidLoad()
