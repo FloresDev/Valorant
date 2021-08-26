@@ -26,6 +26,7 @@
 		65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E40261C7747004DBAA1 /* Gift.swift */; };
 		65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E47261C8E54004DBAA1 /* Loading.swift */; };
 		65FFDB2B26D55978004A128A /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */; };
+		CFEFF2EE26D7A7FC00AB2CE8 /* WeaponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEFF2ED26D7A7FC00AB2CE8 /* WeaponDetailViewController.swift */; };
 		CFF11A8426D6D4D20029759E /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFF11A8326D6D4D20029759E /* Valorant Font.ttf */; };
 		CFFF724926D59B7200A42EFA /* presentation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFFF724826D59B7200A42EFA /* presentation1.gif */; };
 		CFFF724D26D59DAB00A42EFA /* WeaponsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF724C26D59DAB00A42EFA /* WeaponsListViewController.swift */; };
@@ -54,6 +55,7 @@
 		65AC3E40261C7747004DBAA1 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		65AC3E47261C8E54004DBAA1 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		65FFDB2A26D55978004A128A /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
+		CFEFF2ED26D7A7FC00AB2CE8 /* WeaponDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailViewController.swift; sourceTree = "<group>"; };
 		CFF11A8326D6D4D20029759E /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		CFFF724826D59B7200A42EFA /* presentation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation1.gif; sourceTree = "<group>"; };
 		CFFF724C26D59DAB00A42EFA /* WeaponsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				65AC3E40261C7747004DBAA1 /* Gift.swift */,
 				65AC3E47261C8E54004DBAA1 /* Loading.swift */,
 				6560FC49261B752600E222FC /* Data.swift */,
+				CFEFF2ED26D7A7FC00AB2CE8 /* WeaponDetailViewController.swift */,
 				CFFF724E26D59E9D00A42EFA /* WeaponsListCollectionViewCell.swift */,
 				6556BF87261CFE020064B29D /* DetailViewController.swift */,
 				658C0A57261E58F80024D12A /* pruebasViewController.swift */,
@@ -200,6 +203,7 @@
 				65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */,
 				6560FC44261B74BA00E222FC /* Mappable.swift in Sources */,
 				6560FC2A261B6E8000E222FC /* InitViewController.swift in Sources */,
+				CFEFF2EE26D7A7FC00AB2CE8 /* WeaponDetailViewController.swift in Sources */,
 				658C0A58261E58F80024D12A /* pruebasViewController.swift in Sources */,
 				658C0A5C261E68840024D12A /* PaddingLabel.swift in Sources */,
 				6560FC3C261B70B300E222FC /* MyTableViewCellPersons.swift in Sources */,

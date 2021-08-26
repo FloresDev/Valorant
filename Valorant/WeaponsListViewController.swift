@@ -6,6 +6,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
     
     @IBOutlet weak var segmentOutlet: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollSegmented: UIScrollView!
     
     var connection = Connection()
     let spanishLanguage = "language=es-ES"
@@ -22,6 +23,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
     var segm6 = false
     var numSelected = 0
     var weaponsNameArr: [String?] = []
+    var weaponsUidArr: [String?] = []
     var weaponsImaArr: [UIImage?] = []
     var weaponsCost: [Int?] = []
     var weaponsnum = 0
@@ -35,6 +37,20 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         collectionView.delegate = self
         collectionView.dataSource = self
        
+        
+              //scrollSegmented.addSubview(segmentOutlet)
+              //view.addSubview(scrollSegmented)
+              
+              
+              class NoSwipe: UISegmentedControl{
+                  override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+                      if(gestureRecognizer.isKind(of: UITapGestureRecognizer.self)){
+                          return false
+                      }else{
+                          return true
+                      }
+                  }
+              }
         
         if imageDonwlodaded < MAX_IMAGE_DATA {
             self.loading.setupLoadingViews(controller: self)
@@ -129,6 +145,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -146,6 +163,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -163,6 +181,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -180,6 +199,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -197,6 +217,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -214,6 +235,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -232,6 +254,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             weaponsNameArr.removeAll()
             weaponsImaArr.removeAll()
             weaponsCost.removeAll()
+            weaponsUidArr.removeAll()
             viewDidLoad()
             
         }
@@ -249,6 +272,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
                         self.weaponsCost.append(weapons[i].shopData?.cost)
+                        self.weaponsUidArr.append(weapons[i].uuid)
                         collectionView.reloadData()
                     }
                 }
@@ -259,6 +283,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
                         self.weaponsCost.append(weapons[i].shopData?.cost)
+                        self.weaponsUidArr.append(weapons[i].uuid)
                         collectionView.reloadData()
                     }
                 }
@@ -269,6 +294,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
                         self.weaponsCost.append(weapons[i].shopData?.cost)
+                        self.weaponsUidArr.append(weapons[i].uuid)
                         collectionView.reloadData()
                     }
                 }
@@ -279,6 +305,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
                         self.weaponsCost.append(weapons[i].shopData?.cost)
+                        self.weaponsUidArr.append(weapons[i].uuid)
                         collectionView.reloadData()
                     }
                 }
@@ -289,6 +316,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
                         self.weaponsCost.append(weapons[i].shopData?.cost)
+                        self.weaponsUidArr.append(weapons[i].uuid)
                         collectionView.reloadData()
                     }
                 }
@@ -299,6 +327,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                         self.weaponsNameArr.append(weapons[i].displayName)
                         self.weaponsImaArr.append(weapons[i].image)
                         self.weaponsCost.append(weapons[i].shopData?.cost)
+                        self.weaponsUidArr.append(weapons[i].uuid)
                         collectionView.reloadData()
                     }
                 }
@@ -309,11 +338,22 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                             self.weaponsNameArr.append(weapons[i].displayName)
                             self.weaponsImaArr.append(weapons[i].image)
                             self.weaponsCost.append(weapons[i].shopData?.cost)
+                            self.weaponsUidArr.append(weapons[i].uuid)
                             collectionView.reloadData()
                         }
                     }
                 }
             }
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPaths = self.collectionView.indexPathsForSelectedItems
+        let indexPath = indexPaths![0] as NSIndexPath
+       
+       if let detailVLC = segue.destination as? WeaponDetailViewController {
+        detailVLC.weaponuuid = self.weaponsUidArr[indexPath.row]
+       }
+    }
+    
     }
 

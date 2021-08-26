@@ -61,6 +61,10 @@ class Weapons: Mappable {
     var data: [Weapon]?
 }
 
+class WeaponDow: Mappable{
+    var data: Weapon?
+}
+
 class Weapon: Mappable {
     
     var uuid: String?
