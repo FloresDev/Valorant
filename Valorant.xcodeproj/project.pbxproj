@@ -34,6 +34,7 @@
 		CFF2CB2126D8053F00742B26 /* WeaponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */; };
 		CFF2CB2326D8054700742B26 /* WeaponsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB2226D8054700742B26 /* WeaponsListCollectionViewCell.swift */; };
 		CFF2CB2626D8071E00742B26 /* presentation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFF2CB2526D8071E00742B26 /* presentation1.gif */; };
+		CFF2CB2826D809C100742B26 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFF2CB2726D809C100742B26 /* Valorant Font.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +66,8 @@
 		CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDetailViewController.swift; sourceTree = "<group>"; };
 		CFF2CB2226D8054700742B26 /* WeaponsListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsListCollectionViewCell.swift; sourceTree = "<group>"; };
-		CFF2CB2426D805CD00742B26 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		CFF2CB2526D8071E00742B26 /* presentation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation1.gif; sourceTree = "<group>"; };
+		CFF2CB2726D809C100742B26 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +128,7 @@
 				658C0A5B261E68840024D12A /* PaddingLabel.swift */,
 				6526518E261F4E6100537FC8 /* AbilityViewController.swift */,
 				65D18EE326D63BB400237E73 /* MapsControllerSwiftUI.swift */,
-				CFF2CB2426D805CD00742B26 /* Valorant Font.ttf */,
+				CFF2CB2726D809C100742B26 /* Valorant Font.ttf */,
 			);
 			path = Valorant;
 			sourceTree = "<group>";
@@ -192,6 +193,7 @@
 				65FFDB2B26D55978004A128A /* SovaFlechas.mp4 in Resources */,
 				65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */,
 				6560FC2F261B6E8400E222FC /* Assets.xcassets in Resources */,
+				CFF2CB2826D809C100742B26 /* Valorant Font.ttf in Resources */,
 				CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */,
 				6560FC2D261B6E8000E222FC /* Main.storyboard in Resources */,
 				CFF2CB2626D8071E00742B26 /* presentation1.gif in Resources */,
