@@ -4,7 +4,7 @@
 //
 //  Created by Jorge Suarez Calafat on 26/8/21.
 //
-
+//cambio hecho por Koke
 import UIKit
 
 class WeaponDetailViewController: UIViewController {
