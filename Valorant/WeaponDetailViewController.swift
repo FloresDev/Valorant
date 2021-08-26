@@ -30,6 +30,7 @@ class WeaponDetailViewController: UIViewController {
     var type = ""
     var fireMode = ""
     var penetration = ""
+    var cost = 0
     // Cambio hecho por Dani
     // Cambio 2 hecho por Dani
     
@@ -42,16 +43,17 @@ class WeaponDetailViewController: UIViewController {
             if let weapon = weapon {
                 
                 if weapon.data?.weaponStats?.fireMode == "EWeaponFireModeDisplayType::SemiAutomatic"{
-                    fireMode = "Semiautomatica"
+                    fireMode = "Semi"
                 }else{
-                    fireMode = "Automatica"
+                    fireMode = "Auto"
                 }
                 
                 if weapon.data?.weaponStats?.wallPenetration == "EWallPenetrationDisplayType::High"{
-                    penetration = "HIGH"
+                    penetration = "ALTA"
                 }else{
-                    penetration = "LOW"
+                    penetration = "BAJA"
                 }
+            
                 
                 
                 
@@ -64,8 +66,15 @@ class WeaponDetailViewController: UIViewController {
                     weaponNamePrinc.text = weapon.data?.displayName
                     weaponTypeLabel.text = type
                     fireModeLabel.text = fireMode
-                    penetrationLabel.text = "Penetratión: \(penetration)"
-                   // self.costLabel.text = weapon.data?.shopData?.cost
+                    penetrationLabel.text = penetration
+                    
+                    if cost != 0{
+                        
+                    costLabel.text = String(cost)
+                        
+                    }else{
+                        costLabel.text = "Gratis"
+                    }
                 }
 
                 connection.getImage(urlString: (weapon.data?.displayIcon)!) {[self] (image) in

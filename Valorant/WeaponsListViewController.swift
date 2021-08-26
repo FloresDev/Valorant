@@ -361,6 +361,7 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
        if let detailVLC = segue.destination as? WeaponDetailViewController {
         detailVLC.weaponuuid = self.weaponsUidArr[indexPath.row]
         detailVLC.type = self.type
+        detailVLC.cost = self.weaponsCost[indexPath.row]!
        }
     }
     
