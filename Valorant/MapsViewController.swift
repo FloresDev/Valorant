@@ -24,7 +24,10 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
     var slidesNumber = 0
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        // Para evitar tener scroll indeseado, deshabilitamos el scroll vertical con la siguiente línea de código
+        scroll.contentSize.height = 1.0 // El contentSize del scroll igualadao a 1 hace que se deshabilite el scroll vertical
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -191,17 +194,22 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func addTapFunction(slides: [Slide]){
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
         for slide in slides {
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
             slide.mapIconImage.addGestureRecognizer(tap)
             slide.isUserInteractionEnabled = true
-            print("He agregado el gesto")
         }
     }
     
     @objc func tappedMe()
     {
-        print("Tapped on Image")
+        self.performSegue(withIdentifier: "goToMapDetail", sender: self)
+    }
+    
+    // Método que es llamado al cambiar la orientación del dispositivo
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        // Deshabilitamos el scroll vertical
+        scroll.contentSize.height = 1.0
     }
     
     
