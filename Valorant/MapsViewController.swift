@@ -9,9 +9,7 @@ import UIKit
 
 class MapsViewController: UIViewController, UIScrollViewDelegate {
     
-    @IBOutlet weak var mapName: UILabel!
-    @IBOutlet weak var iconMapImage: UIImageView!
-    @IBOutlet weak var mapBackgorund: UIImageView!
+
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scroll: UIScrollView!
     
@@ -22,6 +20,7 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
     var iconImageDownload = 0
     var slides: [Slide] = []
     var slidesNumber = 0
+    var mapNameSelected: String?
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,48 +96,72 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    // Creación de los slides que van a ir dentro del PageControl
     func createSlides() -> [Slide] {
-
-            let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide1.mapBakcground.image = maps[0].artImage
-            slide1.mapName.text = maps[0].displayName
-            slide1.mapIconImage.image = maps[0].mapIcon
-            shadowImage(imagen: slide1.mapIconImage)
+        
+        // CÓDIGO SIMPLIFICADO A PARTIR DEL TUTORIAL
+        /**
+         Creamos así un código escalable y modular, si posteriormente se agregan nuevos mapas, no deberemos modificar este código.
+         Si lo dejamos como en la publicación original deberíamos modificar el código cada vez que se agregase un mapa nuevo a la API
+         ¡OJO! para futuras debemos revisar si podemos hace lo mismo con el método que realiza las animaciones de los elementos al hacer
+         scroll "scrollViewDidScroll", deberemos crear una variable numérica que se actualice de forma automática al detectar un nuevo mapa agregado
+         y también acceder de otra forma al array de slides para no tener que añadir un caso por cada mapa nuevo
+         */
+        
+        var createdSlides: [Slide] = []
+        for i in 0 ... maps.count - 1{
+            print("Me ejecuto")
+            let slide:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+            slide.mapBakcground.image = maps[i].artImage
+            slide.mapName.text = maps[i].displayName
+            slide.mapIconImage.image = maps[i].mapIcon
+            shadowImage(imagen: slide.mapIconImage)
+            createdSlides.append(slide)
             
-            let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide2.mapBakcground.image = maps[1].artImage
-            slide2.mapName.text = maps[1].displayName
-            slide2.mapIconImage.image = maps[1].mapIcon
-            shadowImage(imagen: slide2.mapIconImage)
+        }
+        // CODIGO ORIGINAL DEL TUTORIAL DEL SCROLL HORIZONTAL
         
-            let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide3.mapBakcground.image = maps[2].artImage
-            slide3.mapName.text = maps[2].displayName
-            slide3.mapIconImage.image = maps[2].mapIcon
-            shadowImage(imagen: slide3.mapIconImage)
-        
-            let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide4.mapBakcground.image = maps[3].artImage
-            slide4.mapName.text = maps[3].displayName
-            slide4.mapIconImage.image = maps[3].mapIcon
-            shadowImage(imagen: slide4.mapIconImage)
-        
-            let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide5.mapBakcground.image = maps[4].artImage
-            slide5.mapName.text = maps[4].displayName
-            slide5.mapIconImage.image = maps[4].mapIcon
-            shadowImage(imagen: slide5.mapIconImage)
-        
-            let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide6.mapBakcground.image = maps[5].artImage
-            slide6.mapName.text = maps[5].displayName
-            slide6.mapIconImage.image = maps[5].mapIcon
-            shadowImage(imagen: slide6.mapIconImage)
+//            let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide1.mapBakcground.image = maps[0].artImage
+//            slide1.mapName.text = maps[0].displayName
+//            slide1.mapIconImage.image = maps[0].mapIcon
+//            shadowImage(imagen: slide1.mapIconImage)
+//
+//            let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide2.mapBakcground.image = maps[1].artImage
+//            slide2.mapName.text = maps[1].displayName
+//            slide2.mapIconImage.image = maps[1].mapIcon
+//            shadowImage(imagen: slide2.mapIconImage)
+//
+//            let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide3.mapBakcground.image = maps[2].artImage
+//            slide3.mapName.text = maps[2].displayName
+//            slide3.mapIconImage.image = maps[2].mapIcon
+//            shadowImage(imagen: slide3.mapIconImage)
+//
+//            let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide4.mapBakcground.image = maps[3].artImage
+//            slide4.mapName.text = maps[3].displayName
+//            slide4.mapIconImage.image = maps[3].mapIcon
+//            shadowImage(imagen: slide4.mapIconImage)
+//
+//            let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide5.mapBakcground.image = maps[4].artImage
+//            slide5.mapName.text = maps[4].displayName
+//            slide5.mapIconImage.image = maps[4].mapIcon
+//            shadowImage(imagen: slide5.mapIconImage)
+//
+//            let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide6.mapBakcground.image = maps[5].artImage
+//            slide6.mapName.text = maps[5].displayName
+//            slide6.mapIconImage.image = maps[5].mapIcon
+//            shadowImage(imagen: slide6.mapIconImage)
         
             
-        return [slide1, slide2, slide3, slide4, slide5, slide6]
+        return createdSlides
         }
     
+    // Función que se ejecuta al hacer Scroll
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
@@ -193,6 +216,7 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    // Se recive el array de slides y se recorre creando un gesto paraq cada uno de ellos y añadiéndolo
     func addTapFunction(slides: [Slide]){
         for slide in slides {
             let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
@@ -200,9 +224,11 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
             slide.isUserInteractionEnabled = true
         }
     }
-    
+    // Función que se ejectuta al realizar el gesto agregado en la función "addTapFunction"
     @objc func tappedMe()
     {
+        // Almacenamos en la variable el nombre del mapa, mediante la página actual del PageControl
+        mapNameSelected = slides[pageControl.currentPage].mapName.text ?? "No hay nombre"
         self.performSegue(withIdentifier: "goToMapDetail", sender: self)
     }
     
@@ -210,6 +236,14 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         // Deshabilitamos el scroll vertical
         scroll.contentSize.height = 1.0
+    }
+    
+    // En viamos los datos al detalle
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailMap = segue.destination as? DetailMapViewController {
+            detailMap.mapName = mapNameSelected
+            
+        }
     }
     
     
