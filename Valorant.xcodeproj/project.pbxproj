@@ -39,6 +39,7 @@
 		65D18EEC26D6594900237E73 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EEB26D6594900237E73 /* MapsViewController.swift */; };
 		65D18EEF26D695FB00237E73 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D18EEE26D695FB00237E73 /* Slide.xib */; };
 		65D18EF226D696B600237E73 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EF126D696B600237E73 /* Slide.swift */; };
+		CFC858A726D9A458009354E5 /* knife.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFC858A626D9A458009354E5 /* knife.gif */; };
 		CFE91E8D26D93A5E00508E07 /* SkinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */; };
 		CFF2CB1D26D8044500742B26 /* WeaponsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */; };
 		CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */; };
@@ -83,6 +84,7 @@
 		65D18EEB26D6594900237E73 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		65D18EEE26D695FB00237E73 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		65D18EF126D696B600237E73 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		CFC858A626D9A458009354E5 /* knife.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knife.gif; sourceTree = "<group>"; };
 		CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsListViewController.swift; sourceTree = "<group>"; };
 		CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				65AC3E3D261C7688004DBAA1 /* presentation.gif */,
 				CFF2CB2526D8071E00742B26 /* presentation1.gif */,
+				CFC858A626D9A458009354E5 /* knife.gif */,
 				65770E7526D8E59C0096A343 /* Videos */,
 				65AC3E40261C7747004DBAA1 /* Gift.swift */,
 				65D18EF126D696B600237E73 /* Slide.swift */,
@@ -238,8 +241,12 @@
 				656B54DB26D973570079FB28 /* BreachFalla.mp4 in Resources */,
 				656B54D726D973570079FB28 /* AstraPulsoNova.mp4 in Resources */,
 				CFF2CB2826D809C100742B26 /* Valorant Font.ttf in Resources */,
+
+				CFC858A726D9A458009354E5 /* knife.gif in Resources */,
+
 				656B54D526D973570079FB28 /* BreachExplosion.mp4 in Resources */,
 				656B54E026D9745B0079FB28 /* BrimStoneBaliza.mp4 in Resources */,
+
 				CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */,
 				656B54D826D973570079FB28 /* AstraFormaAstral.mp4 in Resources */,
 				6560FC2D261B6E8000E222FC /* Main.storyboard in Resources */,
