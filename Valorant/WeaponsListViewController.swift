@@ -87,6 +87,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         if segm0 == true || segm1 == true || segm2 == true || segm3 == true || segm4 == true || segm5 == true || segm6 == true{
             
             cell.weaponImage.image = weaponsImaArr[indexPath.row]
+            if weaponsNameArr[indexPath.row] == "Cuerpo a cuerpo"{
+                weaponsNameArr[indexPath.row] = "Cuchillo"
+            }
+            
             cell.weaponName.text = weaponsNameArr[indexPath.row]
             let cost = weaponsCost[indexPath.row]
             
@@ -97,6 +101,8 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
                 cell.weaponCost.text = "Coste: Gratis"
             }
             cell.layer.cornerRadius = 10
+            cell.layer.borderWidth = 3
+            cell.layer.borderColor = #colorLiteral(red: 0.9089635611, green: 0.8954972625, blue: 0.876429975, alpha: 1)
         }
         return cell
         
@@ -106,7 +112,6 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         connection.getWeapons(language: spanishLanguage) { [self] (weapons) in
             if let weapons = weapons {
-                
                 self.weapons = weapons.data!
                 
                 self.weapons = self.weapons.sorted { $0.displayName! < $1.displayName! }
