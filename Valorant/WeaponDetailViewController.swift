@@ -1,19 +1,11 @@
-//
-//  WeaponDetailViewController.swift
-//  Valorant
-//
-//  Created by Jorge Suarez Calafat on 26/8/21.
-//
-//cambio hecho por Koke
+
 import UIKit
 
 class WeaponDetailViewController: UIViewController {
     
     @IBOutlet weak var weaponImage: UIImageView!
     @IBOutlet weak var weponName: UILabel!
-    
     @IBOutlet weak var weaponName03: UILabel!
-    
     @IBOutlet weak var weaponName06: UILabel!
     @IBOutlet weak var weaponName07: UILabel!
     @IBOutlet weak var weaponNamePrinc: UILabel!
@@ -21,6 +13,7 @@ class WeaponDetailViewController: UIViewController {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var fireModeLabel: UILabel!
     @IBOutlet weak var penetrationLabel: UILabel!
+    @IBOutlet weak var statsWeaponView: UIView!
     
     var connection = Connection()
     var weaponuuid: String?
@@ -31,13 +24,14 @@ class WeaponDetailViewController: UIViewController {
     var fireMode = ""
     var penetration = ""
     var cost = 0
-    // Cambio hecho por Dani
-    // Cambio 2 hecho por Dani
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        statsWeaponView.layer.cornerRadius = 5
+        statsWeaponView.layer.borderWidth = 3
+        statsWeaponView.layer.borderColor = #colorLiteral(red: 0.9240000248, green: 0.3059999943, blue: 0.3289999962, alpha: 1)
         
         connection.getWeapon(language: spanishLanguage, uuid: weaponuuid!) { [self] (weapon) in
             if let weapon = weapon {
@@ -53,10 +47,7 @@ class WeaponDetailViewController: UIViewController {
                 }else{
                     penetration = "BAJA"
                 }
-            
-                
-                
-                
+   
                 DispatchQueue.main.async {
                     
                     weaponName03.text = weapon.data?.displayName

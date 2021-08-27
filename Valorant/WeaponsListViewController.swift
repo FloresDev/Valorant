@@ -357,13 +357,20 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let indexPaths = self.collectionView.indexPathsForSelectedItems
         let indexPath = indexPaths![0] as NSIndexPath
-       
-       if let detailVLC = segue.destination as? WeaponDetailViewController {
-        detailVLC.weaponuuid = self.weaponsUidArr[indexPath.row]
-        detailVLC.type = self.type
-        detailVLC.cost = self.weaponsCost[indexPath.row]!
-       }
+        
+        if let detailVLC = segue.destination as? WeaponDetailViewController {
+            detailVLC.weaponuuid = self.weaponsUidArr[indexPath.row]
+            detailVLC.type = self.type
+            
+            if weaponsCost[indexPath.row] != nil{
+                
+                detailVLC.cost = self.weaponsCost[indexPath.row]!
+                
+            }else{
+                
+                detailVLC.cost = 0
+            }
+        }
     }
-    
-    }
+}
 
