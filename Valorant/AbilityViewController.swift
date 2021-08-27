@@ -30,12 +30,17 @@ class AbilityViewController: UIViewController {
     var connection = Connection()
     // Reproductor para el vídeo (Proporcionado iOS)
     var player : AVPlayer!
+    var abilityName: String = ""
+    var url: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        abilityNameLabel.text = ability?.displayName
+        abilityName = (ability?.displayName)!.folding(options: .diacriticInsensitive, locale: .current)
+        abilityNameLabel.text = abilityName
         abilitySlotLabel.text = ability?.slot
         abilityDescriptionLabel.text = ability?.description
+       
+        
 
         
         connection.getImage(urlString: ability!.displayIcon!) { (image) in
@@ -46,13 +51,37 @@ class AbilityViewController: UIViewController {
             }
         }
         initPlayer()
+  
        
     }
     
+
+    
     // Función para inicializar el player
     func initPlayer() {
-        // Creamos la url a partir del Bundle ya que el archivo está dentro de la app
-        let url = Bundle.main.url(forResource: "BrimStoneBaliza", withExtension: "mp4")
+        
+        // Con esta condición obtengo los nombres de los archivos albergados en el Bundle de la app
+        if let files = try? FileManager.default.contentsOfDirectory(atPath: Bundle.main.bundlePath ){
+            // Recorro los archivos del Bundle
+            for file in files {
+                // A los que contengan la extensión .mp4 (Hago esto porque los guarda todos, ya sean vídeos o imágenes)
+                if file.contains(".mp4"){
+                    // Creo un string quitándole los 4 últimos caracteres, que son el ".mp4"
+                    let stringModified1 = file.dropLast(4)
+                    // Ahora a partir de ese primer string modificado obtengo los 4 últimos caracteres del nombre del archivo
+                    // que por lo que he visto de momento coinciden con el nombre de la habilidad que nos viene en el segue
+                    let stringModified2 = stringModified1.suffix(4)
+                    print("El archivo modificado es \(stringModified2)")
+                    print("El habilityName es: \(abilityName)")
+                    // Comprobamos la coincidencia llevándolo todo a minúsculas para evitar errores
+                    if abilityName.lowercased().contains(stringModified2.lowercased()){
+                        print("Coincide")
+                        // Creamos la url a partir del string que modificamos en primera instancia ya que es el que no tiene el ".mp4"
+                        url = Bundle.main.url(forResource: "\(stringModified1)", withExtension: "mp4")
+                    }
+                }
+            }
+        }
         
         // Seleccionamos la opción del constructor que recibe la url
         player = AVPlayer(url: url!)
