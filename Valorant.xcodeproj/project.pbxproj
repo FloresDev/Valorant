@@ -30,6 +30,7 @@
 		65D18EEC26D6594900237E73 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EEB26D6594900237E73 /* MapsViewController.swift */; };
 		65D18EEF26D695FB00237E73 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D18EEE26D695FB00237E73 /* Slide.xib */; };
 		65D18EF226D696B600237E73 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EF126D696B600237E73 /* Slide.swift */; };
+		CFE91E8D26D93A5E00508E07 /* SkinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */; };
 		CFF2CB1D26D8044500742B26 /* WeaponsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */; };
 		CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */; };
 		CFF2CB2126D8053F00742B26 /* WeaponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */; };
@@ -64,6 +65,7 @@
 		65D18EEB26D6594900237E73 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		65D18EEE26D695FB00237E73 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		65D18EF126D696B600237E73 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsListViewController.swift; sourceTree = "<group>"; };
 		CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDetailViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				65AC3E3D261C7688004DBAA1 /* presentation.gif */,
 				CFF2CB2526D8071E00742B26 /* presentation1.gif */,
+				65770E7526D8E59C0096A343 /* Videos */,
 				65AC3E40261C7747004DBAA1 /* Gift.swift */,
 				65D18EF126D696B600237E73 /* Slide.swift */,
 				65AC3E47261C8E54004DBAA1 /* Loading.swift */,
@@ -113,6 +116,7 @@
 				CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */,
 				CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */,
 				CFF2CB2226D8054700742B26 /* WeaponsListCollectionViewCell.swift */,
+				CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */,
 				6560FC3B261B70B300E222FC /* MyTableViewCellPersons.swift */,
 				6560FC3E261B710500E222FC /* TableViewControllerPersons.swift */,
 				6556BF87261CFE020064B29D /* DetailViewController.swift */,
@@ -120,7 +124,6 @@
 				6560FC46261B74FB00E222FC /* Connection.swift */,
 				6560FC49261B752600E222FC /* Data.swift */,
 				65770E7126D8D36F0096A343 /* DetailMapViewController.swift */,
-				65770E7526D8E59C0096A343 /* Videos */,
 				658C0A57261E58F80024D12A /* pruebasViewController.swift */,
 				65D18EEB26D6594900237E73 /* MapsViewController.swift */,
 				658C0A5B261E68840024D12A /* PaddingLabel.swift */,
@@ -228,6 +231,7 @@
 				6526518F261F4E6100537FC8 /* AbilityViewController.swift in Sources */,
 				CFF2CB2326D8054700742B26 /* WeaponsListCollectionViewCell.swift in Sources */,
 				65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */,
+				CFE91E8D26D93A5E00508E07 /* SkinsCollectionViewCell.swift in Sources */,
 				CFF2CB1D26D8044500742B26 /* WeaponsListViewController.swift in Sources */,
 				6560FC44261B74BA00E222FC /* Mappable.swift in Sources */,
 				6560FC2A261B6E8000E222FC /* InitViewController.swift in Sources */,
