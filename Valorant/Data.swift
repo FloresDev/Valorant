@@ -99,6 +99,7 @@ class Weapon: Mappable {
     var image: UIImage?
     var shopData: ShopData?
     var weaponStats: WeaponStats?
+    var skins: [Skins?]
     
     // OJO EL CODING KEY ES NECESARIO PARA METER UNA IMAGEN EN LA CLASE MAPPABLE
     // DEBERÁ CONTEMPLAR TODAS LAS VARIABLES MENOS LA DE LA IMAGEN
@@ -109,8 +110,10 @@ class Weapon: Mappable {
         case displayIcon
         case shopData
         case weaponStats
+        case skins
        
     }
+}
     
     class ShopData: Mappable{
         var cost: Int?
@@ -119,8 +122,57 @@ class Weapon: Mappable {
     class WeaponStats: Mappable{
         var wallPenetration: String?
         var fireMode: String?
+        var fireRate: Float?
+        var runSpeedMultiplier: Float?
+        var reloadTimeSeconds: Float?
+        var magazineSize: Float?
+        var firstBulletAccuracy: Float?
+        var damageRanges: [DamageRanges?]
+        var adsStats: AdsStats?
     }
     
-}
+    class DamageRanges: Mappable{
+        var headDamage: Float
+        var bodyDamage: Float
+        var legDamage: Float
+    }
+    
+    class AdsStats: Mappable{
+        var zoomMultiplier: Float?
+        var fireRate: Float?
+        var runSpeedMultiplier: Float?
+        var burstCount: Float?
+        var firstBulletAccuracy: Float?
+    }
+    
+    class Skins: Mappable {
+        var uuid: String?
+        var displayName: String?
+        var displayIcon: String?
+        var image: UIImage?
+        var chromas: [Chromas?]
+        
+        private enum CodingKeys: String, CodingKey {
+            case uuid
+            case displayName
+            case displayIcon
+            case chromas
+        }
+    }
+    
+    class Chromas: Mappable {
+        var uuid: String?
+        var displayName: String?
+        var displayIcon: String?
+        var swatch: String?
+        var image: UIImage?
+        
+        private enum CodingKeys: String, CodingKey {
+            case uuid
+            case displayName
+            case displayIcon
+            case swatch
+        }
+    }
 
 
