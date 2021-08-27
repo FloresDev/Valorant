@@ -52,7 +52,7 @@ class AbilityViewController: UIViewController {
     // Función para inicializar el player
     func initPlayer() {
         // Creamos la url a partir del Bundle ya que el archivo está dentro de la app
-        let url = Bundle.main.url(forResource: "SovaFlechas", withExtension: "mp4")
+        let url = Bundle.main.url(forResource: "BrimStoneBaliza", withExtension: "mp4")
         
         // Seleccionamos la opción del constructor que recibe la url
         player = AVPlayer(url: url!)
