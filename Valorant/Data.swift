@@ -175,4 +175,32 @@ class Weapon: Mappable {
         }
     }
 
+class Cards: Mappable {
+    var data: [Card]?
+}
+
+class CardOlnly: Mappable {
+    var data: Card?
+}
+
+class Card: Mappable {
+    
+    var uuid: String?
+    var displayName: String?
+    var displayIcon: String?
+    var largeArt: String?
+    var image: UIImage?
+    
+    // OJO EL CODING KEY ES NECESARIO PARA METER UNA IMAGEN EN LA CLASE MAPPABLE
+    // DEBERÁ CONTEMPLAR TODAS LAS VARIABLES MENOS LA DE LA IMAGEN
+    private enum CodingKeys: String, CodingKey {
+        case uuid
+        case displayName
+        case displayIcon
+        case largeArt
+       
+    }
+    
+}
+
 
