@@ -27,13 +27,13 @@ class Loading {
         
         // Container que va a contener a todo lo demás con el difuminado para que lo de atrás no se vea
         container.frame = CGRect(x: controller.view.frame.origin.x, y: controller.view.frame.origin.y, width: controller.view.frame.width, height: controller.view.frame.height)
-        container.backgroundColor = #colorLiteral(red: 0.934802711, green: 0.3080254197, blue: 0.3367152214, alpha: 1)
+        container.backgroundColor = #colorLiteral(red: 0.1379934549, green: 0.1608571708, blue: 0.1884222329, alpha: 1)
         
         // LoadingView
         loadingView.frame = CGRect(x: 0, y: 0, width: 180, height: 180)
         loadingView.center.x = container.center.x
         loadingView.center.y = container.center.y 
-        loadingView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.7)
+        loadingView.backgroundColor = #colorLiteral(red: 0.9240000248, green: 0.3059999943, blue: 0.3289999962, alpha: 1)
         // Le decimos que establezca a true el clip to bounds para que no se salga de los márgenes
         loadingView.clipsToBounds = true
         // Queremos que los bordes sean redondeados
@@ -58,9 +58,9 @@ class Loading {
         // La etiqueta tendrá el texto alineado al centro
         loadingLabel.textAlignment = .center
         // El texto que va a tener
-        loadingLabel.text = "Loading..."
+        loadingLabel.text = "Cargando..."
         // El color del texto
-        loadingLabel.textColor = .white
+        loadingLabel.textColor = #colorLiteral(red: 0.9089635611, green: 0.8954972625, blue: 0.876429975, alpha: 1)
         
     }
     

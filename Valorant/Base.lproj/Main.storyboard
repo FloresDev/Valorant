@@ -491,8 +491,9 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFY-fc-zpv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="127" height="126"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" name="CellBackground"/>
                                                         </imageView>
                                                     </subviews>
                                                 </collectionViewCellContentView>
@@ -512,6 +513,9 @@
                                             <segment title="Sprays"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" name="TextColor"/>
+                                        <connections>
+                                            <action selector="segmentedAction:" destination="kcX-av-eKw" eventType="valueChanged" id="WZO-5j-8Br"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -545,6 +549,7 @@
                     <navigationItem key="navigationItem" id="NPx-GF-MJA"/>
                     <connections>
                         <outlet property="collectionOutlet" destination="c4t-1J-rTN" id="UYY-kf-jTq"/>
+                        <outlet property="segmentedOutlet" destination="XF2-vX-Sfk" id="qc4-ne-sox"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1j6-cp-jtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -559,12 +564,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJI-NR-ern">
-                                <rect key="frame" x="12" y="88" width="389" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kJI-NR-ern">
+                                <rect key="frame" x="12" y="103" width="389" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBy-BQ-Kzf">
-                                <rect key="frame" x="20" y="809" width="374" height="23"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKQ-FQ-sfi">
+                                <rect key="frame" x="20" y="141" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.8862745098" green="0.87058823529999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01e-xu-mNV">
+                                <rect key="frame" x="12" y="248" width="390" height="400"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ne4-W9-bVX">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBy-BQ-Kzf">
+                                <rect key="frame" x="20" y="808" width="374" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" red="0.8862745098" green="0.87058823529999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -573,15 +599,29 @@
                         <viewLayoutGuide key="safeArea" id="Fmj-Nj-4i0"/>
                         <color key="backgroundColor" name="CellBackground"/>
                         <constraints>
-                            <constraint firstItem="jBy-BQ-Kzf" firstAttribute="leading" secondItem="Fmj-Nj-4i0" secondAttribute="leading" constant="20" id="DGo-Gr-RIf"/>
-                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="bottom" secondItem="jBy-BQ-Kzf" secondAttribute="bottom" constant="30" id="XwT-Lw-21s"/>
-                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="trailing" secondItem="jBy-BQ-Kzf" secondAttribute="trailing" constant="20" id="vKl-AP-629"/>
+                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="trailing" secondItem="01e-xu-mNV" secondAttribute="trailing" constant="12" id="3eD-f4-Qzi"/>
+                            <constraint firstItem="kJI-NR-ern" firstAttribute="leading" secondItem="Fmj-Nj-4i0" secondAttribute="leading" constant="12" id="CeH-J4-tGA"/>
+                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="bottom" secondItem="jBy-BQ-Kzf" secondAttribute="bottom" constant="31" id="EBh-Ck-biF"/>
+                            <constraint firstItem="kKQ-FQ-sfi" firstAttribute="top" secondItem="Fmj-Nj-4i0" secondAttribute="top" constant="53" id="EGG-IS-YnE"/>
+                            <constraint firstItem="kJI-NR-ern" firstAttribute="top" secondItem="Fmj-Nj-4i0" secondAttribute="top" constant="15" id="Ntq-fb-jTh"/>
+                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="trailing" secondItem="jBy-BQ-Kzf" secondAttribute="trailing" constant="20" id="RiH-Jr-9pk"/>
+                            <constraint firstItem="kJI-NR-ern" firstAttribute="bottom" secondItem="Fmj-Nj-4i0" secondAttribute="bottom" id="XQT-oB-u3W"/>
+                            <constraint firstItem="01e-xu-mNV" firstAttribute="centerX" secondItem="1lg-he-l7Y" secondAttribute="centerX" id="fNZ-ua-PEx"/>
+                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="trailing" secondItem="kJI-NR-ern" secondAttribute="trailing" constant="13" id="fSe-As-Juq"/>
+                            <constraint firstItem="Fmj-Nj-4i0" firstAttribute="trailing" secondItem="kKQ-FQ-sfi" secondAttribute="trailing" constant="20" id="jWn-vg-QdZ"/>
+                            <constraint firstItem="01e-xu-mNV" firstAttribute="centerY" secondItem="1lg-he-l7Y" secondAttribute="centerY" id="mOe-8z-fNy"/>
+                            <constraint firstItem="01e-xu-mNV" firstAttribute="top" secondItem="kKQ-FQ-sfi" secondAttribute="bottom" constant="78" id="rKg-XJ-Lu0"/>
+                            <constraint firstItem="kKQ-FQ-sfi" firstAttribute="leading" secondItem="Fmj-Nj-4i0" secondAttribute="leading" constant="20" id="vYf-pI-1fN"/>
+                            <constraint firstItem="jBy-BQ-Kzf" firstAttribute="leading" secondItem="Fmj-Nj-4i0" secondAttribute="leading" constant="20" id="vk5-o7-OSd"/>
+                            <constraint firstItem="01e-xu-mNV" firstAttribute="leading" secondItem="Fmj-Nj-4i0" secondAttribute="leading" constant="12" id="x9X-NR-CEk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kT3-zd-e8d"/>
                     <connections>
                         <outlet property="cardImage" destination="kJI-NR-ern" id="bCZ-fg-I3O"/>
                         <outlet property="cardName" destination="jBy-BQ-Kzf" id="VPL-oN-DSy"/>
+                        <outlet property="sprayImage" destination="ne4-W9-bVX" id="bSs-6L-Fo7"/>
+                        <outlet property="sprayName" destination="kKQ-FQ-sfi" id="QZ2-xH-Fz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAw-Lf-9Yr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

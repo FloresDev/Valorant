@@ -203,4 +203,30 @@ class Card: Mappable {
     
 }
 
+class Sprays: Mappable{
+    var data:[Spray]?
+}
+
+class SprayOnly: Mappable {
+    var data: Spray?
+}
+
+class Spray: Mappable {
+    var uuid: String?
+    var displayName: String?
+    var displayIcon: String?
+    var fullIcon: String?
+    var fullTransparentIcon: String?
+    var image: UIImage?
+    
+    private enum CodingKeys: String, CodingKey {
+        case uuid
+        case displayName
+        case displayIcon
+        case fullIcon
+        case fullTransparentIcon
+       
+    }
+}
+
 

@@ -14,6 +14,7 @@ class Connection {
     let agents = "agents?"
     let maps = "maps"
     let cards = "playercards"
+    let sprays = "sprays"
     let baseURLString2 = "https://valorant-api.com/v1/weapons?"
     let baseURLString3 = "https://valorant-api.com/v1/weapons/"
     
@@ -153,6 +154,47 @@ class Connection {
             if error == nil, let data = data {
                 let card = CardOlnly(withJSONData: data)
                 completion(card)
+            }
+            else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
+    
+    // Función para obtener el listado completo de personajes
+    func getSprays(language: String, completion: @escaping(_ persons: Sprays?) -> Void) {
+        guard let url = URL(string: "\(baseURLString)\(sprays)?\(language)") else {
+            completion(nil)
+            return
+        }
+        
+        let urlSession = URLSession(configuration: .default)
+        let task = urlSession.dataTask(with: url) {data, response, error in
+            // Si no se produce un error y además puede obtener datos
+            if error == nil, let data = data {
+                let sprays = Sprays(withJSONData: data)
+                completion(sprays)
+            }
+            else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
+    
+    func getSpray(language: String, uuid: String, completion: @escaping(_ card: SprayOnly?) -> Void) {
+        guard let url = URL(string: "\(baseURLString)\(sprays)/\(uuid)?\(language)") else {
+            completion(nil)
+            return
+        }
+        
+        let urlSession = URLSession(configuration: .default)
+        let task = urlSession.dataTask(with: url) {data, response, error in
+            // Si no se produce un error y además puede obtener datos
+            if error == nil, let data = data {
+                let spray = SprayOnly(withJSONData: data)
+                completion(spray)
             }
             else {
                 completion(nil)
