@@ -131,7 +131,7 @@ class WeaponDetailViewController: UIViewController, UICollectionViewDelegate, UI
                     
                     fireModeLabel.text = fireMode
                     penetrationLabel.text = penetration
-                    FireRateLabel.text = "\(weapon.data?.weaponStats?.fireRate ?? 0) RDS/SEG"
+                    FireRateLabel.text = String(format: "%.1f RDS/SEG", weapon.data?.weaponStats?.fireRate ?? 0)
                     multiSpeedLabel.text = "\(weapon.data?.weaponStats?.runSpeedMultiplier ?? 0) M/SEG"
                     reloadTimeLabel.text = "\(weapon.data?.weaponStats?.reloadTimeSeconds ?? 0) SEG"
                     magazineLabel.text = "\(weapon.data?.weaponStats?.magazineSize ?? 0) RDS"
@@ -157,7 +157,7 @@ class WeaponDetailViewController: UIViewController, UICollectionViewDelegate, UI
                     legDama01Label.text = String(format: "%.1f", weapon.data?.weaponStats?.damageRanges[0]!.legDamage ?? 0)
                     legDama02Label.text = String(format: "%.1f", weapon.data?.weaponStats?.damageRanges[1]!.legDamage ?? 0)
                     }
-                    FireRateADSLabel.text = "\(weapon.data?.weaponStats?.adsStats?.fireRate ?? 0) RDS/SEG"
+                    FireRateADSLabel.text = String(format: "%.1f RDS/SEG", weapon.data?.weaponStats?.adsStats?.fireRate ?? 0)
                     multiSpeedADSLabel.text = "\(weapon.data?.weaponStats?.adsStats?.runSpeedMultiplier ?? 0) M/SEG"
                     multiZoomADSLabel.text = "\(weapon.data?.weaponStats?.adsStats?.zoomMultiplier ?? 0)x"
                     burstCountADSLabel.text = "\(weapon.data?.weaponStats?.adsStats?.burstCount ?? 0) "

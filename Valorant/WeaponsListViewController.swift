@@ -37,21 +37,8 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        scrollSegmented.flashScrollIndicators()
        
-        
-              //scrollSegmented.addSubview(segmentOutlet)
-              //view.addSubview(scrollSegmented)
-              
-              
-              class NoSwipe: UISegmentedControl{
-                  override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-                      if(gestureRecognizer.isKind(of: UITapGestureRecognizer.self)){
-                          return false
-                      }else{
-                          return true
-                      }
-                  }
-              }
         
         if imageDonwlodaded < MAX_IMAGE_DATA {
             self.loading.setupLoadingViews(controller: self)
@@ -95,10 +82,10 @@ class WeaponsListViewController: UIViewController, UICollectionViewDelegate, UIC
             let cost = weaponsCost[indexPath.row]
             
             if cost != 0{
-                cell.weaponCost.text = "Coste: \(weaponsCost[indexPath.row] ?? 0)"
+                cell.weaponCost.text = "\(weaponsCost[indexPath.row] ?? 0)"
                 
             }else{
-                cell.weaponCost.text = "Coste: Gratis"
+                cell.weaponCost.text = "Gratis"
             }
             cell.layer.cornerRadius = 10
             cell.layer.borderWidth = 3

@@ -122,7 +122,7 @@ class Weapon: Mappable {
     class WeaponStats: Mappable{
         var wallPenetration: String?
         var fireMode: String?
-        var fireRate: Float?
+        var fireRate: Float
         var runSpeedMultiplier: Float?
         var reloadTimeSeconds: Float?
         var magazineSize: Float?
