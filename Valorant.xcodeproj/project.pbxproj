@@ -19,19 +19,9 @@
 		6560FC44261B74BA00E222FC /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560FC43261B74BA00E222FC /* Mappable.swift */; };
 		6560FC47261B74FB00E222FC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560FC46261B74FB00E222FC /* Connection.swift */; };
 		6560FC4A261B752600E222FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560FC49261B752600E222FC /* Data.swift */; };
-		656B54E026D9745B0079FB28 /* BrimStoneBaliza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 656B54DF26D9745B0079FB28 /* BrimStoneBaliza.mp4 */; };
-		656B54E326D9754F0079FB28 /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 656B54E226D9754F0079FB28 /* SovaFlechas.mp4 */; };
 		65770E7226D8D36F0096A343 /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65770E7126D8D36F0096A343 /* DetailMapViewController.swift */; };
 		658C0A58261E58F80024D12A /* pruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C0A57261E58F80024D12A /* pruebasViewController.swift */; };
 		658C0A5C261E68840024D12A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C0A5B261E68840024D12A /* PaddingLabel.swift */; };
-		65A9406326DA2103001C4F70 /* AstraPozo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9405B26DA2103001C4F70 /* AstraPozo.mp4 */; };
-		65A9406426DA2103001C4F70 /* AstraPulsoNova.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9405C26DA2103001C4F70 /* AstraPulsoNova.mp4 */; };
-		65A9406526DA2103001C4F70 /* AstraFormaAstral.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9405D26DA2103001C4F70 /* AstraFormaAstral.mp4 */; };
-		65A9406626DA2103001C4F70 /* AstraNebulosa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9405E26DA2103001C4F70 /* AstraNebulosa.mp4 */; };
-		65A9406726DA2103001C4F70 /* BreachFragor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9405F26DA2103001C4F70 /* BreachFragor.mp4 */; };
-		65A9406826DA2103001C4F70 /* BreachReplica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9406026DA2103001C4F70 /* BreachReplica.mp4 */; };
-		65A9406926DA2103001C4F70 /* BreachFalla.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9406126DA2103001C4F70 /* BreachFalla.mp4 */; };
-		65A9406A26DA2103001C4F70 /* BreachExplosion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65A9406226DA2103001C4F70 /* BreachExplosion.mp4 */; };
 		65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 65AC3E3D261C7688004DBAA1 /* presentation.gif */; };
 		65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E40261C7747004DBAA1 /* Gift.swift */; };
 		65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E47261C8E54004DBAA1 /* Loading.swift */; };
@@ -39,6 +29,16 @@
 		65D18EEC26D6594900237E73 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EEB26D6594900237E73 /* MapsViewController.swift */; };
 		65D18EEF26D695FB00237E73 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D18EEE26D695FB00237E73 /* Slide.xib */; };
 		65D18EF226D696B600237E73 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EF126D696B600237E73 /* Slide.swift */; };
+		65EB1B6026DCC172007691EF /* AstraPozo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B5F26DCC172007691EF /* AstraPozo.mp4 */; };
+		65EB1B6326DCC1EB007691EF /* AstraFormaAstral.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6226DCC1EB007691EF /* AstraFormaAstral.mp4 */; };
+		65EB1B6726DCC245007691EF /* AstraPulsoNova.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6626DCC245007691EF /* AstraPulsoNova.mp4 */; };
+		65EB1B6A26DCC3DC007691EF /* AstraNebulosa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6926DCC3DC007691EF /* AstraNebulosa.mp4 */; };
+		65EB1B6D26DCC41B007691EF /* BreachExplosion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6C26DCC41B007691EF /* BreachExplosion.mp4 */; };
+		65EB1B7026DCC453007691EF /* BreachFalla.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6F26DCC453007691EF /* BreachFalla.mp4 */; };
+		65EB1B7626DCC55D007691EF /* BreachFragor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7226DCC55D007691EF /* BreachFragor.mp4 */; };
+		65EB1B7726DCC55D007691EF /* BreachReplica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */; };
+		65EB1B7826DCC55D007691EF /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */; };
+		65EB1B7926DCC55D007691EF /* BrimStoneBaliza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */; };
 		CFC858A726D9A458009354E5 /* knife.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFC858A626D9A458009354E5 /* knife.gif */; };
 		CFD4AD9526DA41CF00027931 /* MiscListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4AD9426DA41CF00027931 /* MiscListViewController.swift */; };
 		CFD4AD9726DA44B900027931 /* MiscCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4AD9626DA44B800027931 /* MiscCollectionViewCell.swift */; };
@@ -68,19 +68,9 @@
 		6560FC43261B74BA00E222FC /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		6560FC46261B74FB00E222FC /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		6560FC49261B752600E222FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		656B54DF26D9745B0079FB28 /* BrimStoneBaliza.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimStoneBaliza.mp4; sourceTree = "<group>"; };
-		656B54E226D9754F0079FB28 /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
 		65770E7126D8D36F0096A343 /* DetailMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
 		658C0A57261E58F80024D12A /* pruebasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebasViewController.swift; sourceTree = "<group>"; };
 		658C0A5B261E68840024D12A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		65A9405B26DA2103001C4F70 /* AstraPozo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPozo.mp4; sourceTree = "<group>"; };
-		65A9405C26DA2103001C4F70 /* AstraPulsoNova.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPulsoNova.mp4; sourceTree = "<group>"; };
-		65A9405D26DA2103001C4F70 /* AstraFormaAstral.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraFormaAstral.mp4; sourceTree = "<group>"; };
-		65A9405E26DA2103001C4F70 /* AstraNebulosa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraNebulosa.mp4; sourceTree = "<group>"; };
-		65A9405F26DA2103001C4F70 /* BreachFragor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachFragor.mp4; sourceTree = "<group>"; };
-		65A9406026DA2103001C4F70 /* BreachReplica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachReplica.mp4; sourceTree = "<group>"; };
-		65A9406126DA2103001C4F70 /* BreachFalla.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachFalla.mp4; sourceTree = "<group>"; };
-		65A9406226DA2103001C4F70 /* BreachExplosion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachExplosion.mp4; sourceTree = "<group>"; };
 		65AC3E3D261C7688004DBAA1 /* presentation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation.gif; sourceTree = SOURCE_ROOT; };
 		65AC3E40261C7747004DBAA1 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		65AC3E47261C8E54004DBAA1 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
@@ -88,6 +78,16 @@
 		65D18EEB26D6594900237E73 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		65D18EEE26D695FB00237E73 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		65D18EF126D696B600237E73 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		65EB1B5F26DCC172007691EF /* AstraPozo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPozo.mp4; sourceTree = "<group>"; };
+		65EB1B6226DCC1EB007691EF /* AstraFormaAstral.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraFormaAstral.mp4; sourceTree = "<group>"; };
+		65EB1B6626DCC245007691EF /* AstraPulsoNova.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPulsoNova.mp4; sourceTree = "<group>"; };
+		65EB1B6926DCC3DC007691EF /* AstraNebulosa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraNebulosa.mp4; sourceTree = "<group>"; };
+		65EB1B6C26DCC41B007691EF /* BreachExplosion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachExplosion.mp4; sourceTree = "<group>"; };
+		65EB1B6F26DCC453007691EF /* BreachFalla.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachFalla.mp4; sourceTree = "<group>"; };
+		65EB1B7226DCC55D007691EF /* BreachFragor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachFragor.mp4; sourceTree = "<group>"; };
+		65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachReplica.mp4; sourceTree = "<group>"; };
+		65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
+		65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimStoneBaliza.mp4; sourceTree = "<group>"; };
 		CFC858A626D9A458009354E5 /* knife.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knife.gif; sourceTree = "<group>"; };
 		CFD4AD9426DA41CF00027931 /* MiscListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscListViewController.swift; sourceTree = "<group>"; };
 		CFD4AD9626DA44B800027931 /* MiscCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -175,16 +175,16 @@
 		65770E7526D8E59C0096A343 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				65A9405D26DA2103001C4F70 /* AstraFormaAstral.mp4 */,
-				65A9405E26DA2103001C4F70 /* AstraNebulosa.mp4 */,
-				65A9405B26DA2103001C4F70 /* AstraPozo.mp4 */,
-				65A9405C26DA2103001C4F70 /* AstraPulsoNova.mp4 */,
-				65A9406226DA2103001C4F70 /* BreachExplosion.mp4 */,
-				65A9406126DA2103001C4F70 /* BreachFalla.mp4 */,
-				65A9405F26DA2103001C4F70 /* BreachFragor.mp4 */,
-				65A9406026DA2103001C4F70 /* BreachReplica.mp4 */,
-				656B54DF26D9745B0079FB28 /* BrimStoneBaliza.mp4 */,
-				656B54E226D9754F0079FB28 /* SovaFlechas.mp4 */,
+				65EB1B6626DCC245007691EF /* AstraPulsoNova.mp4 */,
+				65EB1B5F26DCC172007691EF /* AstraPozo.mp4 */,
+				65EB1B6226DCC1EB007691EF /* AstraFormaAstral.mp4 */,
+				65EB1B6926DCC3DC007691EF /* AstraNebulosa.mp4 */,
+				65EB1B6C26DCC41B007691EF /* BreachExplosion.mp4 */,
+				65EB1B6F26DCC453007691EF /* BreachFalla.mp4 */,
+				65EB1B7226DCC55D007691EF /* BreachFragor.mp4 */,
+				65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */,
+				65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */,
+				65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -247,23 +247,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */,
+				65EB1B6026DCC172007691EF /* AstraPozo.mp4 in Resources */,
 				6560FC2F261B6E8400E222FC /* Assets.xcassets in Resources */,
+				65EB1B7626DCC55D007691EF /* BreachFragor.mp4 in Resources */,
 				CFF2CB2826D809C100742B26 /* Valorant Font.ttf in Resources */,
-				65A9406726DA2103001C4F70 /* BreachFragor.mp4 in Resources */,
-				65A9406426DA2103001C4F70 /* AstraPulsoNova.mp4 in Resources */,
-				65A9406826DA2103001C4F70 /* BreachReplica.mp4 in Resources */,
-				65A9406A26DA2103001C4F70 /* BreachExplosion.mp4 in Resources */,
-				65A9406926DA2103001C4F70 /* BreachFalla.mp4 in Resources */,
+				65EB1B7726DCC55D007691EF /* BreachReplica.mp4 in Resources */,
+				65EB1B7926DCC55D007691EF /* BrimStoneBaliza.mp4 in Resources */,
 				CFC858A726D9A458009354E5 /* knife.gif in Resources */,
-				65A9406526DA2103001C4F70 /* AstraFormaAstral.mp4 in Resources */,
-				656B54E026D9745B0079FB28 /* BrimStoneBaliza.mp4 in Resources */,
+				65EB1B7026DCC453007691EF /* BreachFalla.mp4 in Resources */,
 				CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */,
+				65EB1B6D26DCC41B007691EF /* BreachExplosion.mp4 in Resources */,
 				6560FC2D261B6E8000E222FC /* Main.storyboard in Resources */,
 				CFF2CB2626D8071E00742B26 /* presentation1.gif in Resources */,
-				65A9406626DA2103001C4F70 /* AstraNebulosa.mp4 in Resources */,
+				65EB1B6A26DCC3DC007691EF /* AstraNebulosa.mp4 in Resources */,
+				65EB1B6326DCC1EB007691EF /* AstraFormaAstral.mp4 in Resources */,
 				65D18EEF26D695FB00237E73 /* Slide.xib in Resources */,
-				656B54E326D9754F0079FB28 /* SovaFlechas.mp4 in Resources */,
-				65A9406326DA2103001C4F70 /* AstraPozo.mp4 in Resources */,
+				65EB1B6726DCC245007691EF /* AstraPulsoNova.mp4 in Resources */,
+				65EB1B7826DCC55D007691EF /* SovaFlechas.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
