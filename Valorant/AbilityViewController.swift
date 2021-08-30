@@ -65,7 +65,7 @@ class AbilityViewController: UIViewController {
             // Recorro los archivos del Bundle
             for file in files {
                 // A los que contengan la extensión .mp4 (Hago esto porque los guarda todos, ya sean vídeos o imágenes)
-                if file.contains(".mp4"){
+                if file.contains(".mp4") || file.contains(".m4v"){
                     // Creo un string quitándole los 4 últimos caracteres, que son el ".mp4"
                     let stringModified1 = file.dropLast(4)
                     // Ahora a partir de ese primer string modificado obtengo los 4 últimos caracteres del nombre del archivo
