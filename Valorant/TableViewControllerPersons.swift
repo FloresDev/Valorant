@@ -22,7 +22,6 @@ class TableViewControllerPersons: UITableViewController {
         super.viewDidLoad()
         
 
-        title = "Personajes Valorant"
         connectionGetListAndImage()
         if imageDonwlodaded < MAX_IMAGE_DATA {
             self.loading.setupLoadingViews(controller: self)

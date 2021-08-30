@@ -137,7 +137,7 @@ class WeaponDetailViewController: UIViewController, UICollectionViewDelegate, UI
                     magazineLabel.text = "\(weapon.data?.weaponStats?.magazineSize ?? 0) RDS"
                     firstBulletAccLabel.text = "\(weapon.data?.weaponStats?.firstBulletAccuracy ?? 0) DEG"
                     
-                    if weapon.data?.displayName == "Bulldog" || weapon.data?.displayName == "Vandal" ||  weapon.data?.displayName == "Marshal" || weapon.data?.displayName == "Operator" {
+                    if weapon.data?.displayName == "Bulldog" || weapon.data?.displayName == "Vandal" ||  weapon.data?.displayName == "Marshal" || weapon.data?.displayName == "Operator" || weapon.data?.displayName == "Guardian" {
                         
                         rangeMetersLabel.text = "0-50 M"
                         headDama01Label.text = String(format: "%.1f", weapon.data?.weaponStats?.damageRanges[0]!.headDamage ?? 0)
