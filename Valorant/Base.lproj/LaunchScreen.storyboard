@@ -20,25 +20,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="0.19638538359999999" green="0.19913166760000001" blue="0.2378860116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALORANT HOUND" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1r-sb-hbo">
-                                <rect key="frame" x="16" y="44" width="383" height="173"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="85"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.13799345490000001" green="0.1608571708" blue="0.18842223289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="5" height="3"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIT" translatesAutoresizingMaskIntoConstraints="NO" id="oWM-Mm-Mkg">
+                                <rect key="frame" x="14" y="0.0" width="386" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oWM-Mm-Mkg" secondAttribute="height" multiplier="386:259" id="QkE-Kg-ld5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="U1r-sb-hbo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CG3-Uz-LOL"/>
+                            <constraint firstItem="oWM-Mm-Mkg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FN6-7j-nP1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LLn-lw-fcG" secondAttribute="bottom" constant="-34" id="GDc-Tz-CY7"/>
                             <constraint firstItem="LLn-lw-fcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IL9-MC-01l"/>
                             <constraint firstItem="LLn-lw-fcG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="NdA-u1-ZeV"/>
-                            <constraint firstItem="U1r-sb-hbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ng0-y5-A1R"/>
+                            <constraint firstItem="oWM-Mm-Mkg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="ODm-zm-PBa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oWM-Mm-Mkg" secondAttribute="trailing" constant="14" id="Xjp-VM-wpq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLn-lw-fcG" secondAttribute="trailing" id="a1N-hu-d47"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1r-sb-hbo" secondAttribute="trailing" constant="15" id="bLA-gc-gey"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TIT" width="990" height="415"/>
         <image name="cov" width="236" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
