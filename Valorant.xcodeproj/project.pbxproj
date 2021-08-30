@@ -22,10 +22,8 @@
 		65770E7226D8D36F0096A343 /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65770E7126D8D36F0096A343 /* DetailMapViewController.swift */; };
 		658C0A58261E58F80024D12A /* pruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C0A57261E58F80024D12A /* pruebasViewController.swift */; };
 		658C0A5C261E68840024D12A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C0A5B261E68840024D12A /* PaddingLabel.swift */; };
-		65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 65AC3E3D261C7688004DBAA1 /* presentation.gif */; };
 		65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E40261C7747004DBAA1 /* Gift.swift */; };
 		65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E47261C8E54004DBAA1 /* Loading.swift */; };
-		65D18EE426D63BB400237E73 /* MapsControllerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EE326D63BB400237E73 /* MapsControllerSwiftUI.swift */; };
 		65D18EEC26D6594900237E73 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EEB26D6594900237E73 /* MapsViewController.swift */; };
 		65D18EEF26D695FB00237E73 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D18EEE26D695FB00237E73 /* Slide.xib */; };
 		65D18EF226D696B600237E73 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EF126D696B600237E73 /* Slide.swift */; };
@@ -39,13 +37,14 @@
 		65EB1B7726DCC55D007691EF /* BreachReplica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */; };
 		65EB1B7826DCC55D007691EF /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */; };
 		65EB1B7926DCC55D007691EF /* BrimStoneBaliza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */; };
+		CF20E10E26DD1A0C004A92BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF20E10C26DD1A0C004A92BE /* LaunchScreen.storyboard */; };
+		CF20E11426DD2998004A92BE /* presentation3.gif in Resources */ = {isa = PBXBuildFile; fileRef = CF20E11326DD2998004A92BE /* presentation3.gif */; };
 		CFC858A726D9A458009354E5 /* knife.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFC858A626D9A458009354E5 /* knife.gif */; };
 		CFD4AD9526DA41CF00027931 /* MiscListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4AD9426DA41CF00027931 /* MiscListViewController.swift */; };
 		CFD4AD9726DA44B900027931 /* MiscCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4AD9626DA44B800027931 /* MiscCollectionViewCell.swift */; };
 		CFE29F8626DC3E2C00D70107 /* NoSwipeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE29F8526DC3E2C00D70107 /* NoSwipeSegmentedControl.swift */; };
 		CFE91E8D26D93A5E00508E07 /* SkinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */; };
 		CFF2CB1D26D8044500742B26 /* WeaponsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */; };
-		CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */; };
 		CFF2CB2126D8053F00742B26 /* WeaponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */; };
 		CFF2CB2326D8054700742B26 /* WeaponsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2CB2226D8054700742B26 /* WeaponsListCollectionViewCell.swift */; };
 		CFF2CB2626D8071E00742B26 /* presentation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFF2CB2526D8071E00742B26 /* presentation1.gif */; };
@@ -71,10 +70,8 @@
 		65770E7126D8D36F0096A343 /* DetailMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
 		658C0A57261E58F80024D12A /* pruebasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebasViewController.swift; sourceTree = "<group>"; };
 		658C0A5B261E68840024D12A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		65AC3E3D261C7688004DBAA1 /* presentation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation.gif; sourceTree = SOURCE_ROOT; };
 		65AC3E40261C7747004DBAA1 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		65AC3E47261C8E54004DBAA1 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
-		65D18EE326D63BB400237E73 /* MapsControllerSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsControllerSwiftUI.swift; sourceTree = "<group>"; };
 		65D18EEB26D6594900237E73 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		65D18EEE26D695FB00237E73 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		65D18EF126D696B600237E73 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
@@ -88,13 +85,14 @@
 		65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachReplica.mp4; sourceTree = "<group>"; };
 		65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
 		65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimStoneBaliza.mp4; sourceTree = "<group>"; };
+		CF20E10D26DD1A0C004A92BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF20E11326DD2998004A92BE /* presentation3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation3.gif; sourceTree = "<group>"; };
 		CFC858A626D9A458009354E5 /* knife.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knife.gif; sourceTree = "<group>"; };
 		CFD4AD9426DA41CF00027931 /* MiscListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscListViewController.swift; sourceTree = "<group>"; };
 		CFD4AD9626DA44B800027931 /* MiscCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFE29F8526DC3E2C00D70107 /* NoSwipeSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSwipeSegmentedControl.swift; sourceTree = "<group>"; };
 		CFE91E8C26D93A5E00508E07 /* SkinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFF2CB1C26D8044500742B26 /* WeaponsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsListViewController.swift; sourceTree = "<group>"; };
-		CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFF2CB2026D8053F00742B26 /* WeaponDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDetailViewController.swift; sourceTree = "<group>"; };
 		CFF2CB2226D8054700742B26 /* WeaponsListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsListCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFF2CB2526D8071E00742B26 /* presentation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation1.gif; sourceTree = "<group>"; };
@@ -132,7 +130,7 @@
 		6560FC24261B6E8000E222FC /* Valorant */ = {
 			isa = PBXGroup;
 			children = (
-				65AC3E3D261C7688004DBAA1 /* presentation.gif */,
+				CF20E11326DD2998004A92BE /* presentation3.gif */,
 				CFF2CB2526D8071E00742B26 /* presentation1.gif */,
 				CFC858A626D9A458009354E5 /* knife.gif */,
 				65770E7526D8E59C0096A343 /* Videos */,
@@ -161,9 +159,8 @@
 				65D18EEB26D6594900237E73 /* MapsViewController.swift */,
 				658C0A5B261E68840024D12A /* PaddingLabel.swift */,
 				6526518E261F4E6100537FC8 /* AbilityViewController.swift */,
-				65D18EE326D63BB400237E73 /* MapsControllerSwiftUI.swift */,
 				6560FC2B261B6E8000E222FC /* Main.storyboard */,
-				CFF2CB1E26D8046D00742B26 /* LaunchScreen.storyboard */,
+				CF20E10C26DD1A0C004A92BE /* LaunchScreen.storyboard */,
 				65D18EEE26D695FB00237E73 /* Slide.xib */,
 				6560FC2E261B6E8400E222FC /* Assets.xcassets */,
 				6560FC33261B6E8400E222FC /* Info.plist */,
@@ -246,21 +243,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65AC3E3E261C7688004DBAA1 /* presentation.gif in Resources */,
 				65EB1B6026DCC172007691EF /* AstraPozo.mp4 in Resources */,
 				6560FC2F261B6E8400E222FC /* Assets.xcassets in Resources */,
 				65EB1B7626DCC55D007691EF /* BreachFragor.mp4 in Resources */,
 				CFF2CB2826D809C100742B26 /* Valorant Font.ttf in Resources */,
 				65EB1B7726DCC55D007691EF /* BreachReplica.mp4 in Resources */,
+				CF20E10E26DD1A0C004A92BE /* LaunchScreen.storyboard in Resources */,
 				65EB1B7926DCC55D007691EF /* BrimStoneBaliza.mp4 in Resources */,
 				CFC858A726D9A458009354E5 /* knife.gif in Resources */,
 				65EB1B7026DCC453007691EF /* BreachFalla.mp4 in Resources */,
-				CFF2CB1F26D8046D00742B26 /* LaunchScreen.storyboard in Resources */,
 				65EB1B6D26DCC41B007691EF /* BreachExplosion.mp4 in Resources */,
 				6560FC2D261B6E8000E222FC /* Main.storyboard in Resources */,
 				CFF2CB2626D8071E00742B26 /* presentation1.gif in Resources */,
 				65EB1B6A26DCC3DC007691EF /* AstraNebulosa.mp4 in Resources */,
 				65EB1B6326DCC1EB007691EF /* AstraFormaAstral.mp4 in Resources */,
+				CF20E11426DD2998004A92BE /* presentation3.gif in Resources */,
 				65D18EEF26D695FB00237E73 /* Slide.xib in Resources */,
 				65EB1B6726DCC245007691EF /* AstraPulsoNova.mp4 in Resources */,
 				65EB1B7826DCC55D007691EF /* SovaFlechas.mp4 in Resources */,
@@ -299,7 +296,6 @@
 				6560FC47261B74FB00E222FC /* Connection.swift in Sources */,
 				6560FC4A261B752600E222FC /* Data.swift in Sources */,
 				CFE29F8626DC3E2C00D70107 /* NoSwipeSegmentedControl.swift in Sources */,
-				65D18EE426D63BB400237E73 /* MapsControllerSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +308,14 @@
 				6560FC2C261B6E8000E222FC /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF20E10C26DD1A0C004A92BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF20E10D26DD1A0C004A92BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

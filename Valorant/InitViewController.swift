@@ -7,11 +7,13 @@
 
 import UIKit
 import SwiftUI
+import SafariServices
 
-class InitViewController: UIViewController {
+class InitViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var bg: UIImageView!
     @IBOutlet weak var buttons: UIStackView!
+    @IBOutlet weak var hstackOut: UIStackView!
     
     @IBOutlet var initButtons: [UIButton]!
     var animationExecuting: Bool = false
@@ -24,11 +26,43 @@ class InitViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.bg.loadGif(name: "presentation1")
-        setButtons()
+        self.bg.loadGif(name: "presentation3")
+        
+        hstackOut.layer.borderWidth = 3
+        hstackOut.layer.borderColor = #colorLiteral(red: 0.9089635611, green: 0.8954972625, blue: 0.876429975, alpha: 1)
+       // setButtons()
         
     }
     
+    @IBAction func goWeb01(_ sender: Any) {
+        guard let url = URL(string: "https://playvalorant.com/es-es/news/") else { return }
+        
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.delegate = self
+        present(safariVC, animated: true, completion: nil)
+    }
+    @IBAction func goWeb02(_ sender: Any) {
+        
+        guard let url = URL(string: "https://playvalorant.com/es-es/media/") else { return }
+        
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.delegate = self
+        present(safariVC, animated: true, completion: nil)
+    }
+    @IBAction func goWeb03(_ sender: Any) {
+        
+        guard let url = URL(string: "https://playvalorant.com/es-es/leaderboards/?page=1&act=2a27e5d2-4d30-c9e2-b15a-93b8909a442c") else { return }
+        
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.delegate = self
+        present(safariVC, animated: true, completion: nil)
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    /*
     func setButtons() {
         
         for initButton in initButtons {
@@ -94,5 +128,6 @@ class InitViewController: UIViewController {
     //        return true
     //    }
     //
+ */
 }
 
