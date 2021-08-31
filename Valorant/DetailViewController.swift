@@ -39,7 +39,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
     let brimStoneUrl = "https://www.youtube.com/embed/7yHnJ_oNxTI?playsinline=1"
     let cypherUrl = "https://www.youtube.com/embed/SgbqFtRRgLA?playsinline=1"
     let killJoyUrl = "https://www.youtube.com/embed/ua-iIRQDY8g?playsinline=1"
-    let jetUrl = "https://www.youtube.com/embed/eExLTGyOFN4?playsinline=1"
+    let jetUrl = "https://www.youtube.com/embed/-cPLXswVsvc?start=3&playsinline=1"
     let omenUrl = "https://www.youtube.com/embed/_jJdWy6bDj4?playsinline=1"
     let phoenixUrl = "https://www.youtube.com/embed/ttJMFW2wUQM?playsinline=1"
     let razeUrl = "https://www.youtube.com/embed/2-uAL__pp_U?playsinline=1"
@@ -96,6 +96,12 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
         if let person = agent {
             title = "\(person.displayName!)"
             abilities = person.abilities!
+           
+            for i in 0...abilities.count - 1 {
+                if abilities[i].displayIcon == nil {
+                    abilities.remove(at: i)
+                }
+            }
             connection.getImage(urlString: person.bustPortrait!) { [self] (image) in
                 connection.getImage(urlString: (person.role?.displayIcon)!) { (image) in
                     DispatchQueue.main.async {
