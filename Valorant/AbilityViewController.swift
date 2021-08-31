@@ -120,7 +120,7 @@ class AbilityViewController: UIViewController, UIScrollViewDelegate {
                         print("Coincide")
                         print("La coincidencia es de \(stringModified2) y \(abilityName)")
                         if abilityName == "ENGANO" {
-                            abilityNameLabel.text = "Engaño"
+                            abilityNameLabel.text = "ENGAÑO"
                         }
                         // Creamos la url a partir del string que modificamos en primera instancia ya que es el que no tiene el ".mp4"
                         url = Bundle.main.url(forResource: "\(stringModified1)", withExtension: "mp4")
