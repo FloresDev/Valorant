@@ -212,7 +212,11 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
-        cell.textLabel?.text = abilities[indexPath.row].displayName
+        // Creamos variable para poder pasar su contenido a minúsculas
+        var cellText = abilities[indexPath.row].displayName?.lowercased()
+        // Aprovechamos la extensión de string para capitalizar la primera letra
+        cellText = cellText?.capitalizingFirstLetter()
+        cell.textLabel?.text = cellText
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.textColor = .white
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -250,6 +254,17 @@ class DetailViewController: UIViewController, UITableViewDataSource, UIScrollVie
         }
      }
      
+}
+
+// Extensión que capitaliza la primera letra de un String
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
 }
 
 

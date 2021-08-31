@@ -21,11 +21,16 @@ class MapsViewController: UIViewController, UIScrollViewDelegate {
     var slides: [Slide] = []
     var slidesNumber = 0
     var mapNameSelected: String?
+    let screenSize = UIScreen.main.bounds
     
+    @IBOutlet weak var mapsHeight: NSLayoutConstraint!
     
     override func viewWillAppear(_ animated: Bool) {
         // Para evitar tener scroll indeseado, deshabilitamos el scroll vertical con la siguiente línea de código
         scroll.contentSize.height = 1.0 // El contentSize del scroll igualadao a 1 hace que se deshabilite el scroll vertical
+        let screenHight = screenSize.height
+        mapsHeight.constant = screenHight
+        
     }
     
     override func viewDidLoad() {
