@@ -22,21 +22,76 @@
 		65770E7226D8D36F0096A343 /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65770E7126D8D36F0096A343 /* DetailMapViewController.swift */; };
 		658C0A58261E58F80024D12A /* pruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C0A57261E58F80024D12A /* pruebasViewController.swift */; };
 		658C0A5C261E68840024D12A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C0A5B261E68840024D12A /* PaddingLabel.swift */; };
+		65AC12FF26DE191B00F7F808 /* JettVendaval.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC12FE26DE191B00F7F808 /* JettVendaval.mp4 */; };
+		65AC130526DE209300F7F808 /* JettCuchillas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC130126DE209300F7F808 /* JettCuchillas.mp4 */; };
+		65AC130626DE209300F7F808 /* JettVientoCola.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC130226DE209300F7F808 /* JettVientoCola.mp4 */; };
+		65AC130726DE209300F7F808 /* JettPlaneo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC130326DE209300F7F808 /* JettPlaneo.mp4 */; };
+		65AC130826DE209300F7F808 /* JettBorrasca.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC130426DE209300F7F808 /* JettBorrasca.mp4 */; };
+		65AC131026DE27B500F7F808 /* kayoFragm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC130F26DE27B500F7F808 /* kayoFragm.mp4 */; };
+		65AC131526DE2AC700F7F808 /* kayoPuntoCero.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131226DE2AC700F7F808 /* kayoPuntoCero.mp4 */; };
+		65AC131626DE2AC700F7F808 /* kayoUnidadFlash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131326DE2AC700F7F808 /* kayoUnidadFlash.mp4 */; };
+		65AC131726DE2AC700F7F808 /* kayoCmdAnular.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131426DE2AC700F7F808 /* kayoCmdAnular.mp4 */; };
+		65AC131E26DE30B200F7F808 /* kylljoyBotAlarma.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131A26DE30B100F7F808 /* kylljoyBotAlarma.mp4 */; };
+		65AC131F26DE30B200F7F808 /* killjoyTorreta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131B26DE30B200F7F808 /* killjoyTorreta.mp4 */; };
+		65AC132026DE30B200F7F808 /* killjoyNanoEnjambre.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131C26DE30B200F7F808 /* killjoyNanoEnjambre.mp4 */; };
+		65AC132126DE30B200F7F808 /* killjoyBloqueo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC131D26DE30B200F7F808 /* killjoyBloqueo.mp4 */; };
+		65AC132826DE326A00F7F808 /* omenApTenebrosa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC132426DE326A00F7F808 /* omenApTenebrosa.mp4 */; };
+		65AC132926DE326A00F7F808 /* omenParanoia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC132526DE326A00F7F808 /* omenParanoia.mp4 */; };
+		65AC132A26DE326A00F7F808 /* omenSombras.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC132626DE326A00F7F808 /* omenSombras.mp4 */; };
+		65AC132B26DE326A00F7F808 /* omenVelo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC132726DE326A00F7F808 /* omenVelo.mp4 */; };
+		65AC133226DE347700F7F808 /* phoenixCombustion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC132E26DE347600F7F808 /* phoenixCombustion.mp4 */; };
+		65AC133326DE347700F7F808 /* phoenixCenizas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC132F26DE347600F7F808 /* phoenixCenizas.mp4 */; };
+		65AC133426DE347700F7F808 /* phoenixBolaCurva.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC133026DE347700F7F808 /* phoenixBolaCurva.mp4 */; };
+		65AC133526DE347700F7F808 /* phoenixLlamarada.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC133126DE347700F7F808 /* phoenixLlamarada.mp4 */; };
+		65AC133C26DE3E8C00F7F808 /* RazeExplosivo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC133826DE3E8C00F7F808 /* RazeExplosivo.mp4 */; };
+		65AC133D26DE3E8C00F7F808 /* RazeBalas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC133926DE3E8C00F7F808 /* RazeBalas.mp4 */; };
+		65AC133E26DE3E8C00F7F808 /* RazeCierra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC133A26DE3E8C00F7F808 /* RazeCierra.mp4 */; };
+		65AC133F26DE3E8C00F7F808 /* RazeFardo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC133B26DE3E8C00F7F808 /* RazeFardo.mp4 */; };
+		65AC134926DE41A000F7F808 /* reynaDespreciar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC134526DE41A000F7F808 /* reynaDespreciar.mp4 */; };
+		65AC134A26DE41A000F7F808 /* reynaEmperatriz.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC134626DE41A000F7F808 /* reynaEmperatriz.mp4 */; };
+		65AC134B26DE41A000F7F808 /* reynaLasciva.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC134726DE41A000F7F808 /* reynaLasciva.mp4 */; };
+		65AC134C26DE41A000F7F808 /* reynaDevorar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC134826DE41A000F7F808 /* reynaDevorar.mp4 */; };
+		65AC135326DE439700F7F808 /* sageRalen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC134F26DE439700F7F808 /* sageRalen.mp4 */; };
+		65AC135426DE439700F7F808 /* sageSana.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC135026DE439700F7F808 /* sageSana.mp4 */; };
+		65AC135626DE439700F7F808 /* sageBarrera.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC135226DE439700F7F808 /* sageBarrera.mp4 */; };
+		65AC135A26DE445B00F7F808 /* sageResurre.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC135926DE445B00F7F808 /* sageResurre.mp4 */; };
+		65AC136226DE45A000F7F808 /* skyeGuia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC135E26DE45A000F7F808 /* skyeGuia.mp4 */; };
+		65AC136326DE45A000F7F808 /* skyeBusca.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC135F26DE45A000F7F808 /* skyeBusca.mp4 */; };
+		65AC136426DE45A000F7F808 /* skyePrecur.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC136026DE45A000F7F808 /* skyePrecur.mp4 */; };
+		65AC136526DE45A000F7F808 /* skyeReforesta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC136126DE45A000F7F808 /* skyeReforesta.mp4 */; };
+		65AC136B26DE574300F7F808 /* sovaProyectil.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC136A26DE574300F7F808 /* sovaProyectil.mp4 */; };
+		65AC137126DE6A5800F7F808 /* sovaFuria.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC136F26DE6A5800F7F808 /* sovaFuria.mp4 */; };
+		65AC137226DE6A5800F7F808 /* sovaDron.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC137026DE6A5800F7F808 /* sovaDron.mp4 */; };
+		65AC137926DE6B8000F7F808 /* viperNube.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC137526DE6B8000F7F808 /* viperNube.mp4 */; };
+		65AC137A26DE6B8000F7F808 /* viperVeneno.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC137626DE6B8000F7F808 /* viperVeneno.mp4 */; };
+		65AC137B26DE6B8000F7F808 /* viperVibora.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC137726DE6B8000F7F808 /* viperVibora.mp4 */; };
+		65AC137C26DE6B8000F7F808 /* viperToxica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC137826DE6B8000F7F808 /* viperToxica.mp4 */; };
+		65AC138426DE6D3E00F7F808 /* yoruViaje.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC138026DE6D3E00F7F808 /* yoruViaje.mp4 */; };
+		65AC138526DE6D3E00F7F808 /* yoruInfiltra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC138126DE6D3E00F7F808 /* yoruInfiltra.mp4 */; };
+		65AC138626DE6D3E00F7F808 /* yoruEngano.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC138226DE6D3E00F7F808 /* yoruEngano.mp4 */; };
+		65AC138726DE6D3E00F7F808 /* yoruCiego.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65AC138326DE6D3E00F7F808 /* yoruCiego.mp4 */; };
 		65AC3E41261C7747004DBAA1 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E40261C7747004DBAA1 /* Gift.swift */; };
 		65AC3E48261C8E54004DBAA1 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3E47261C8E54004DBAA1 /* Loading.swift */; };
 		65D18EEC26D6594900237E73 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EEB26D6594900237E73 /* MapsViewController.swift */; };
 		65D18EEF26D695FB00237E73 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D18EEE26D695FB00237E73 /* Slide.xib */; };
 		65D18EF226D696B600237E73 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D18EF126D696B600237E73 /* Slide.swift */; };
-		65EB1B6026DCC172007691EF /* AstraPozo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B5F26DCC172007691EF /* AstraPozo.mp4 */; };
+		65EB1B6026DCC172007691EF /* AstraPozoGravitatorio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B5F26DCC172007691EF /* AstraPozoGravitatorio.mp4 */; };
 		65EB1B6326DCC1EB007691EF /* AstraFormaAstral.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6226DCC1EB007691EF /* AstraFormaAstral.mp4 */; };
 		65EB1B6726DCC245007691EF /* AstraPulsoNova.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6626DCC245007691EF /* AstraPulsoNova.mp4 */; };
 		65EB1B6A26DCC3DC007691EF /* AstraNebulosa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6926DCC3DC007691EF /* AstraNebulosa.mp4 */; };
-		65EB1B6D26DCC41B007691EF /* BreachExplosion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6C26DCC41B007691EF /* BreachExplosion.mp4 */; };
+		65EB1B6D26DCC41B007691EF /* BreachCegadora.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6C26DCC41B007691EF /* BreachCegadora.mp4 */; };
 		65EB1B7026DCC453007691EF /* BreachFalla.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B6F26DCC453007691EF /* BreachFalla.mp4 */; };
 		65EB1B7626DCC55D007691EF /* BreachFragor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7226DCC55D007691EF /* BreachFragor.mp4 */; };
 		65EB1B7726DCC55D007691EF /* BreachReplica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */; };
-		65EB1B7826DCC55D007691EF /* SovaFlechas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */; };
-		65EB1B7926DCC55D007691EF /* BrimStoneBaliza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */; };
+		65EB1B7826DCC55D007691EF /* sovaFlecha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B7426DCC55D007691EF /* sovaFlecha.mp4 */; };
+		65EB1B9E26DD39C0007691EF /* CypherHurto.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B9A26DD39BF007691EF /* CypherHurto.mp4 */; };
+		65EB1B9F26DD39C0007691EF /* CypherCable.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B9B26DD39BF007691EF /* CypherCable.mp4 */; };
+		65EB1BA026DD39C0007691EF /* CypherCibernetica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B9C26DD39BF007691EF /* CypherCibernetica.mp4 */; };
+		65EB1BA126DD39C0007691EF /* CypherEspia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1B9D26DD39C0007691EF /* CypherEspia.mp4 */; };
+		65EB1BA826DD39E7007691EF /* BrimstoneOrbital.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1BA426DD39E7007691EF /* BrimstoneOrbital.mp4 */; };
+		65EB1BA926DD39E7007691EF /* BrimstoneCortina.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1BA526DD39E7007691EF /* BrimstoneCortina.mp4 */; };
+		65EB1BAA26DD39E7007691EF /* BrimstoneBailza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1BA626DD39E7007691EF /* BrimstoneBailza.mp4 */; };
+		65EB1BAB26DD39E7007691EF /* BrimstoneIncendiario.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EB1BA726DD39E7007691EF /* BrimstoneIncendiario.mp4 */; };
 		CF20E10E26DD1A0C004A92BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF20E10C26DD1A0C004A92BE /* LaunchScreen.storyboard */; };
 		CF20E11426DD2998004A92BE /* presentation3.gif in Resources */ = {isa = PBXBuildFile; fileRef = CF20E11326DD2998004A92BE /* presentation3.gif */; };
 		CFC858A726D9A458009354E5 /* knife.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFC858A626D9A458009354E5 /* knife.gif */; };
@@ -70,21 +125,76 @@
 		65770E7126D8D36F0096A343 /* DetailMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
 		658C0A57261E58F80024D12A /* pruebasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebasViewController.swift; sourceTree = "<group>"; };
 		658C0A5B261E68840024D12A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		65AC12FE26DE191B00F7F808 /* JettVendaval.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JettVendaval.mp4; sourceTree = "<group>"; };
+		65AC130126DE209300F7F808 /* JettCuchillas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JettCuchillas.mp4; sourceTree = "<group>"; };
+		65AC130226DE209300F7F808 /* JettVientoCola.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JettVientoCola.mp4; sourceTree = "<group>"; };
+		65AC130326DE209300F7F808 /* JettPlaneo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JettPlaneo.mp4; sourceTree = "<group>"; };
+		65AC130426DE209300F7F808 /* JettBorrasca.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JettBorrasca.mp4; sourceTree = "<group>"; };
+		65AC130F26DE27B500F7F808 /* kayoFragm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kayoFragm.mp4; sourceTree = "<group>"; };
+		65AC131226DE2AC700F7F808 /* kayoPuntoCero.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kayoPuntoCero.mp4; sourceTree = "<group>"; };
+		65AC131326DE2AC700F7F808 /* kayoUnidadFlash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kayoUnidadFlash.mp4; sourceTree = "<group>"; };
+		65AC131426DE2AC700F7F808 /* kayoCmdAnular.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kayoCmdAnular.mp4; sourceTree = "<group>"; };
+		65AC131A26DE30B100F7F808 /* kylljoyBotAlarma.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kylljoyBotAlarma.mp4; sourceTree = "<group>"; };
+		65AC131B26DE30B200F7F808 /* killjoyTorreta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = killjoyTorreta.mp4; sourceTree = "<group>"; };
+		65AC131C26DE30B200F7F808 /* killjoyNanoEnjambre.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = killjoyNanoEnjambre.mp4; sourceTree = "<group>"; };
+		65AC131D26DE30B200F7F808 /* killjoyBloqueo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = killjoyBloqueo.mp4; sourceTree = "<group>"; };
+		65AC132426DE326A00F7F808 /* omenApTenebrosa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = omenApTenebrosa.mp4; sourceTree = "<group>"; };
+		65AC132526DE326A00F7F808 /* omenParanoia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = omenParanoia.mp4; sourceTree = "<group>"; };
+		65AC132626DE326A00F7F808 /* omenSombras.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = omenSombras.mp4; sourceTree = "<group>"; };
+		65AC132726DE326A00F7F808 /* omenVelo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = omenVelo.mp4; sourceTree = "<group>"; };
+		65AC132E26DE347600F7F808 /* phoenixCombustion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = phoenixCombustion.mp4; sourceTree = "<group>"; };
+		65AC132F26DE347600F7F808 /* phoenixCenizas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = phoenixCenizas.mp4; sourceTree = "<group>"; };
+		65AC133026DE347700F7F808 /* phoenixBolaCurva.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = phoenixBolaCurva.mp4; sourceTree = "<group>"; };
+		65AC133126DE347700F7F808 /* phoenixLlamarada.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = phoenixLlamarada.mp4; sourceTree = "<group>"; };
+		65AC133826DE3E8C00F7F808 /* RazeExplosivo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RazeExplosivo.mp4; sourceTree = "<group>"; };
+		65AC133926DE3E8C00F7F808 /* RazeBalas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RazeBalas.mp4; sourceTree = "<group>"; };
+		65AC133A26DE3E8C00F7F808 /* RazeCierra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RazeCierra.mp4; sourceTree = "<group>"; };
+		65AC133B26DE3E8C00F7F808 /* RazeFardo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RazeFardo.mp4; sourceTree = "<group>"; };
+		65AC134526DE41A000F7F808 /* reynaDespreciar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reynaDespreciar.mp4; sourceTree = "<group>"; };
+		65AC134626DE41A000F7F808 /* reynaEmperatriz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reynaEmperatriz.mp4; sourceTree = "<group>"; };
+		65AC134726DE41A000F7F808 /* reynaLasciva.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reynaLasciva.mp4; sourceTree = "<group>"; };
+		65AC134826DE41A000F7F808 /* reynaDevorar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reynaDevorar.mp4; sourceTree = "<group>"; };
+		65AC134F26DE439700F7F808 /* sageRalen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sageRalen.mp4; sourceTree = "<group>"; };
+		65AC135026DE439700F7F808 /* sageSana.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sageSana.mp4; sourceTree = "<group>"; };
+		65AC135226DE439700F7F808 /* sageBarrera.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sageBarrera.mp4; sourceTree = "<group>"; };
+		65AC135926DE445B00F7F808 /* sageResurre.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sageResurre.mp4; sourceTree = "<group>"; };
+		65AC135E26DE45A000F7F808 /* skyeGuia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyeGuia.mp4; sourceTree = "<group>"; };
+		65AC135F26DE45A000F7F808 /* skyeBusca.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyeBusca.mp4; sourceTree = "<group>"; };
+		65AC136026DE45A000F7F808 /* skyePrecur.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyePrecur.mp4; sourceTree = "<group>"; };
+		65AC136126DE45A000F7F808 /* skyeReforesta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyeReforesta.mp4; sourceTree = "<group>"; };
+		65AC136A26DE574300F7F808 /* sovaProyectil.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sovaProyectil.mp4; sourceTree = "<group>"; };
+		65AC136F26DE6A5800F7F808 /* sovaFuria.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sovaFuria.mp4; sourceTree = "<group>"; };
+		65AC137026DE6A5800F7F808 /* sovaDron.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sovaDron.mp4; sourceTree = "<group>"; };
+		65AC137526DE6B8000F7F808 /* viperNube.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = viperNube.mp4; sourceTree = "<group>"; };
+		65AC137626DE6B8000F7F808 /* viperVeneno.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = viperVeneno.mp4; sourceTree = "<group>"; };
+		65AC137726DE6B8000F7F808 /* viperVibora.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = viperVibora.mp4; sourceTree = "<group>"; };
+		65AC137826DE6B8000F7F808 /* viperToxica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = viperToxica.mp4; sourceTree = "<group>"; };
+		65AC138026DE6D3E00F7F808 /* yoruViaje.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoruViaje.mp4; sourceTree = "<group>"; };
+		65AC138126DE6D3E00F7F808 /* yoruInfiltra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoruInfiltra.mp4; sourceTree = "<group>"; };
+		65AC138226DE6D3E00F7F808 /* yoruEngano.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoruEngano.mp4; sourceTree = "<group>"; };
+		65AC138326DE6D3E00F7F808 /* yoruCiego.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoruCiego.mp4; sourceTree = "<group>"; };
 		65AC3E40261C7747004DBAA1 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		65AC3E47261C8E54004DBAA1 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		65D18EEB26D6594900237E73 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		65D18EEE26D695FB00237E73 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		65D18EF126D696B600237E73 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		65EB1B5F26DCC172007691EF /* AstraPozo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPozo.mp4; sourceTree = "<group>"; };
+		65EB1B5F26DCC172007691EF /* AstraPozoGravitatorio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPozoGravitatorio.mp4; sourceTree = "<group>"; };
 		65EB1B6226DCC1EB007691EF /* AstraFormaAstral.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraFormaAstral.mp4; sourceTree = "<group>"; };
 		65EB1B6626DCC245007691EF /* AstraPulsoNova.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraPulsoNova.mp4; sourceTree = "<group>"; };
 		65EB1B6926DCC3DC007691EF /* AstraNebulosa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AstraNebulosa.mp4; sourceTree = "<group>"; };
-		65EB1B6C26DCC41B007691EF /* BreachExplosion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachExplosion.mp4; sourceTree = "<group>"; };
+		65EB1B6C26DCC41B007691EF /* BreachCegadora.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachCegadora.mp4; sourceTree = "<group>"; };
 		65EB1B6F26DCC453007691EF /* BreachFalla.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachFalla.mp4; sourceTree = "<group>"; };
 		65EB1B7226DCC55D007691EF /* BreachFragor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachFragor.mp4; sourceTree = "<group>"; };
 		65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreachReplica.mp4; sourceTree = "<group>"; };
-		65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SovaFlechas.mp4; sourceTree = "<group>"; };
-		65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimStoneBaliza.mp4; sourceTree = "<group>"; };
+		65EB1B7426DCC55D007691EF /* sovaFlecha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sovaFlecha.mp4; sourceTree = "<group>"; };
+		65EB1B9A26DD39BF007691EF /* CypherHurto.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CypherHurto.mp4; sourceTree = "<group>"; };
+		65EB1B9B26DD39BF007691EF /* CypherCable.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CypherCable.mp4; sourceTree = "<group>"; };
+		65EB1B9C26DD39BF007691EF /* CypherCibernetica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CypherCibernetica.mp4; sourceTree = "<group>"; };
+		65EB1B9D26DD39C0007691EF /* CypherEspia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CypherEspia.mp4; sourceTree = "<group>"; };
+		65EB1BA426DD39E7007691EF /* BrimstoneOrbital.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimstoneOrbital.mp4; sourceTree = "<group>"; };
+		65EB1BA526DD39E7007691EF /* BrimstoneCortina.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimstoneCortina.mp4; sourceTree = "<group>"; };
+		65EB1BA626DD39E7007691EF /* BrimstoneBailza.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimstoneBailza.mp4; sourceTree = "<group>"; };
+		65EB1BA726DD39E7007691EF /* BrimstoneIncendiario.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrimstoneIncendiario.mp4; sourceTree = "<group>"; };
 		CF20E10D26DD1A0C004A92BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF20E11326DD2998004A92BE /* presentation3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presentation3.gif; sourceTree = "<group>"; };
 		CFC858A626D9A458009354E5 /* knife.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knife.gif; sourceTree = "<group>"; };
@@ -172,18 +282,201 @@
 		65770E7526D8E59C0096A343 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				65AC137F26DE6D2900F7F808 /* Yoru */,
+				65AC137426DE6B7200F7F808 /* Viper */,
+				65AC136726DE45B000F7F808 /* Sova */,
+				65AC135D26DE458E00F7F808 /* Skye */,
+				65AC134E26DE438C00F7F808 /* Sage */,
+				65AC134426DE407E00F7F808 /* Reyna */,
+				65AC133726DE3E8200F7F808 /* Raze */,
+				65AC132D26DE346800F7F808 /* Phoenix */,
+				65AC132326DE326000F7F808 /* Omen */,
+				65AC131926DE30A600F7F808 /* KillJoy */,
+				65AC130A26DE271E00F7F808 /* Kayo */,
+				65EB1BB026DD4570007691EF /* Jett */,
+				65EB1BA326DD39D2007691EF /* Brimstone */,
+				65EB1B9926DD39A2007691EF /* Cypher */,
+				65EB1B9826DD398C007691EF /* Breach */,
+				65EB1B9726DD3976007691EF /* Astra */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		65AC130A26DE271E00F7F808 /* Kayo */ = {
+			isa = PBXGroup;
+			children = (
+				65AC130F26DE27B500F7F808 /* kayoFragm.mp4 */,
+				65AC131426DE2AC700F7F808 /* kayoCmdAnular.mp4 */,
+				65AC131226DE2AC700F7F808 /* kayoPuntoCero.mp4 */,
+				65AC131326DE2AC700F7F808 /* kayoUnidadFlash.mp4 */,
+			);
+			path = Kayo;
+			sourceTree = "<group>";
+		};
+		65AC131926DE30A600F7F808 /* KillJoy */ = {
+			isa = PBXGroup;
+			children = (
+				65AC131D26DE30B200F7F808 /* killjoyBloqueo.mp4 */,
+				65AC131C26DE30B200F7F808 /* killjoyNanoEnjambre.mp4 */,
+				65AC131B26DE30B200F7F808 /* killjoyTorreta.mp4 */,
+				65AC131A26DE30B100F7F808 /* kylljoyBotAlarma.mp4 */,
+			);
+			path = KillJoy;
+			sourceTree = "<group>";
+		};
+		65AC132326DE326000F7F808 /* Omen */ = {
+			isa = PBXGroup;
+			children = (
+				65AC132426DE326A00F7F808 /* omenApTenebrosa.mp4 */,
+				65AC132526DE326A00F7F808 /* omenParanoia.mp4 */,
+				65AC132626DE326A00F7F808 /* omenSombras.mp4 */,
+				65AC132726DE326A00F7F808 /* omenVelo.mp4 */,
+			);
+			path = Omen;
+			sourceTree = "<group>";
+		};
+		65AC132D26DE346800F7F808 /* Phoenix */ = {
+			isa = PBXGroup;
+			children = (
+				65AC133026DE347700F7F808 /* phoenixBolaCurva.mp4 */,
+				65AC132F26DE347600F7F808 /* phoenixCenizas.mp4 */,
+				65AC132E26DE347600F7F808 /* phoenixCombustion.mp4 */,
+				65AC133126DE347700F7F808 /* phoenixLlamarada.mp4 */,
+			);
+			path = Phoenix;
+			sourceTree = "<group>";
+		};
+		65AC133726DE3E8200F7F808 /* Raze */ = {
+			isa = PBXGroup;
+			children = (
+				65AC133926DE3E8C00F7F808 /* RazeBalas.mp4 */,
+				65AC133826DE3E8C00F7F808 /* RazeExplosivo.mp4 */,
+				65AC133A26DE3E8C00F7F808 /* RazeCierra.mp4 */,
+				65AC133B26DE3E8C00F7F808 /* RazeFardo.mp4 */,
+			);
+			path = Raze;
+			sourceTree = "<group>";
+		};
+		65AC134426DE407E00F7F808 /* Reyna */ = {
+			isa = PBXGroup;
+			children = (
+				65AC134526DE41A000F7F808 /* reynaDespreciar.mp4 */,
+				65AC134826DE41A000F7F808 /* reynaDevorar.mp4 */,
+				65AC134626DE41A000F7F808 /* reynaEmperatriz.mp4 */,
+				65AC134726DE41A000F7F808 /* reynaLasciva.mp4 */,
+			);
+			path = Reyna;
+			sourceTree = "<group>";
+		};
+		65AC134E26DE438C00F7F808 /* Sage */ = {
+			isa = PBXGroup;
+			children = (
+				65AC135226DE439700F7F808 /* sageBarrera.mp4 */,
+				65AC134F26DE439700F7F808 /* sageRalen.mp4 */,
+				65AC135026DE439700F7F808 /* sageSana.mp4 */,
+				65AC135926DE445B00F7F808 /* sageResurre.mp4 */,
+			);
+			path = Sage;
+			sourceTree = "<group>";
+		};
+		65AC135D26DE458E00F7F808 /* Skye */ = {
+			isa = PBXGroup;
+			children = (
+				65AC135F26DE45A000F7F808 /* skyeBusca.mp4 */,
+				65AC135E26DE45A000F7F808 /* skyeGuia.mp4 */,
+				65AC136026DE45A000F7F808 /* skyePrecur.mp4 */,
+				65AC136126DE45A000F7F808 /* skyeReforesta.mp4 */,
+			);
+			path = Skye;
+			sourceTree = "<group>";
+		};
+		65AC136726DE45B000F7F808 /* Sova */ = {
+			isa = PBXGroup;
+			children = (
+				65EB1B7426DCC55D007691EF /* sovaFlecha.mp4 */,
+				65AC136A26DE574300F7F808 /* sovaProyectil.mp4 */,
+				65AC137026DE6A5800F7F808 /* sovaDron.mp4 */,
+				65AC136F26DE6A5800F7F808 /* sovaFuria.mp4 */,
+			);
+			path = Sova;
+			sourceTree = "<group>";
+		};
+		65AC137426DE6B7200F7F808 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				65AC137526DE6B8000F7F808 /* viperNube.mp4 */,
+				65AC137826DE6B8000F7F808 /* viperToxica.mp4 */,
+				65AC137626DE6B8000F7F808 /* viperVeneno.mp4 */,
+				65AC137726DE6B8000F7F808 /* viperVibora.mp4 */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		65AC137F26DE6D2900F7F808 /* Yoru */ = {
+			isa = PBXGroup;
+			children = (
+				65AC138326DE6D3E00F7F808 /* yoruCiego.mp4 */,
+				65AC138226DE6D3E00F7F808 /* yoruEngano.mp4 */,
+				65AC138126DE6D3E00F7F808 /* yoruInfiltra.mp4 */,
+				65AC138026DE6D3E00F7F808 /* yoruViaje.mp4 */,
+			);
+			path = Yoru;
+			sourceTree = "<group>";
+		};
+		65EB1B9726DD3976007691EF /* Astra */ = {
+			isa = PBXGroup;
+			children = (
 				65EB1B6626DCC245007691EF /* AstraPulsoNova.mp4 */,
-				65EB1B5F26DCC172007691EF /* AstraPozo.mp4 */,
+				65EB1B5F26DCC172007691EF /* AstraPozoGravitatorio.mp4 */,
 				65EB1B6226DCC1EB007691EF /* AstraFormaAstral.mp4 */,
 				65EB1B6926DCC3DC007691EF /* AstraNebulosa.mp4 */,
-				65EB1B6C26DCC41B007691EF /* BreachExplosion.mp4 */,
+			);
+			path = Astra;
+			sourceTree = "<group>";
+		};
+		65EB1B9826DD398C007691EF /* Breach */ = {
+			isa = PBXGroup;
+			children = (
+				65EB1B6C26DCC41B007691EF /* BreachCegadora.mp4 */,
 				65EB1B6F26DCC453007691EF /* BreachFalla.mp4 */,
 				65EB1B7226DCC55D007691EF /* BreachFragor.mp4 */,
 				65EB1B7326DCC55D007691EF /* BreachReplica.mp4 */,
-				65EB1B7526DCC55D007691EF /* BrimStoneBaliza.mp4 */,
-				65EB1B7426DCC55D007691EF /* SovaFlechas.mp4 */,
 			);
-			path = Videos;
+			path = Breach;
+			sourceTree = "<group>";
+		};
+		65EB1B9926DD39A2007691EF /* Cypher */ = {
+			isa = PBXGroup;
+			children = (
+				65EB1B9B26DD39BF007691EF /* CypherCable.mp4 */,
+				65EB1B9C26DD39BF007691EF /* CypherCibernetica.mp4 */,
+				65EB1B9D26DD39C0007691EF /* CypherEspia.mp4 */,
+				65EB1B9A26DD39BF007691EF /* CypherHurto.mp4 */,
+			);
+			path = Cypher;
+			sourceTree = "<group>";
+		};
+		65EB1BA326DD39D2007691EF /* Brimstone */ = {
+			isa = PBXGroup;
+			children = (
+				65EB1BA626DD39E7007691EF /* BrimstoneBailza.mp4 */,
+				65EB1BA726DD39E7007691EF /* BrimstoneIncendiario.mp4 */,
+				65EB1BA426DD39E7007691EF /* BrimstoneOrbital.mp4 */,
+				65EB1BA526DD39E7007691EF /* BrimstoneCortina.mp4 */,
+			);
+			path = Brimstone;
+			sourceTree = "<group>";
+		};
+		65EB1BB026DD4570007691EF /* Jett */ = {
+			isa = PBXGroup;
+			children = (
+				65AC12FE26DE191B00F7F808 /* JettVendaval.mp4 */,
+				65AC130426DE209300F7F808 /* JettBorrasca.mp4 */,
+				65AC130126DE209300F7F808 /* JettCuchillas.mp4 */,
+				65AC130326DE209300F7F808 /* JettPlaneo.mp4 */,
+				65AC130226DE209300F7F808 /* JettVientoCola.mp4 */,
+			);
+			path = Jett;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,24 +536,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65EB1B6026DCC172007691EF /* AstraPozo.mp4 in Resources */,
+				65AC137926DE6B8000F7F808 /* viperNube.mp4 in Resources */,
+				65AC134926DE41A000F7F808 /* reynaDespreciar.mp4 in Resources */,
+				65AC136526DE45A000F7F808 /* skyeReforesta.mp4 in Resources */,
+				65EB1B6026DCC172007691EF /* AstraPozoGravitatorio.mp4 in Resources */,
+				65AC131626DE2AC700F7F808 /* kayoUnidadFlash.mp4 in Resources */,
+				65AC133226DE347700F7F808 /* phoenixCombustion.mp4 in Resources */,
+				65EB1BAB26DD39E7007691EF /* BrimstoneIncendiario.mp4 in Resources */,
+				65AC137B26DE6B8000F7F808 /* viperVibora.mp4 in Resources */,
+				65EB1B9E26DD39C0007691EF /* CypherHurto.mp4 in Resources */,
+				65AC132026DE30B200F7F808 /* killjoyNanoEnjambre.mp4 in Resources */,
+				65AC12FF26DE191B00F7F808 /* JettVendaval.mp4 in Resources */,
+				65AC133D26DE3E8C00F7F808 /* RazeBalas.mp4 in Resources */,
 				6560FC2F261B6E8400E222FC /* Assets.xcassets in Resources */,
+				65EB1BA126DD39C0007691EF /* CypherEspia.mp4 in Resources */,
 				65EB1B7626DCC55D007691EF /* BreachFragor.mp4 in Resources */,
+				65AC131026DE27B500F7F808 /* kayoFragm.mp4 in Resources */,
+				65AC131726DE2AC700F7F808 /* kayoCmdAnular.mp4 in Resources */,
+				65EB1BAA26DD39E7007691EF /* BrimstoneBailza.mp4 in Resources */,
+				65AC138526DE6D3E00F7F808 /* yoruInfiltra.mp4 in Resources */,
+				65EB1B9F26DD39C0007691EF /* CypherCable.mp4 in Resources */,
+				65AC135A26DE445B00F7F808 /* sageResurre.mp4 in Resources */,
+				65AC132826DE326A00F7F808 /* omenApTenebrosa.mp4 in Resources */,
+				65AC137A26DE6B8000F7F808 /* viperVeneno.mp4 in Resources */,
 				CFF2CB2826D809C100742B26 /* Valorant Font.ttf in Resources */,
+				65AC130626DE209300F7F808 /* JettVientoCola.mp4 in Resources */,
+				65AC136226DE45A000F7F808 /* skyeGuia.mp4 in Resources */,
+				65AC133C26DE3E8C00F7F808 /* RazeExplosivo.mp4 in Resources */,
+				65AC136326DE45A000F7F808 /* skyeBusca.mp4 in Resources */,
+				65AC137C26DE6B8000F7F808 /* viperToxica.mp4 in Resources */,
+				65AC134A26DE41A000F7F808 /* reynaEmperatriz.mp4 in Resources */,
+				65AC132A26DE326A00F7F808 /* omenSombras.mp4 in Resources */,
 				65EB1B7726DCC55D007691EF /* BreachReplica.mp4 in Resources */,
+				65AC138726DE6D3E00F7F808 /* yoruCiego.mp4 in Resources */,
+				65AC136426DE45A000F7F808 /* skyePrecur.mp4 in Resources */,
+				65AC134C26DE41A000F7F808 /* reynaDevorar.mp4 in Resources */,
+				65AC133E26DE3E8C00F7F808 /* RazeCierra.mp4 in Resources */,
 				CF20E10E26DD1A0C004A92BE /* LaunchScreen.storyboard in Resources */,
-				65EB1B7926DCC55D007691EF /* BrimStoneBaliza.mp4 in Resources */,
+				65AC132126DE30B200F7F808 /* killjoyBloqueo.mp4 in Resources */,
+				65AC132926DE326A00F7F808 /* omenParanoia.mp4 in Resources */,
 				CFC858A726D9A458009354E5 /* knife.gif in Resources */,
 				65EB1B7026DCC453007691EF /* BreachFalla.mp4 in Resources */,
-				65EB1B6D26DCC41B007691EF /* BreachExplosion.mp4 in Resources */,
+				65AC138626DE6D3E00F7F808 /* yoruEngano.mp4 in Resources */,
+				65EB1B6D26DCC41B007691EF /* BreachCegadora.mp4 in Resources */,
 				6560FC2D261B6E8000E222FC /* Main.storyboard in Resources */,
+				65AC133F26DE3E8C00F7F808 /* RazeFardo.mp4 in Resources */,
+				65AC135326DE439700F7F808 /* sageRalen.mp4 in Resources */,
+				65AC133326DE347700F7F808 /* phoenixCenizas.mp4 in Resources */,
+				65AC138426DE6D3E00F7F808 /* yoruViaje.mp4 in Resources */,
 				CFF2CB2626D8071E00742B26 /* presentation1.gif in Resources */,
+				65AC130726DE209300F7F808 /* JettPlaneo.mp4 in Resources */,
+				65AC130826DE209300F7F808 /* JettBorrasca.mp4 in Resources */,
 				65EB1B6A26DCC3DC007691EF /* AstraNebulosa.mp4 in Resources */,
 				65EB1B6326DCC1EB007691EF /* AstraFormaAstral.mp4 in Resources */,
 				CF20E11426DD2998004A92BE /* presentation3.gif in Resources */,
+				65AC131526DE2AC700F7F808 /* kayoPuntoCero.mp4 in Resources */,
+				65AC136B26DE574300F7F808 /* sovaProyectil.mp4 in Resources */,
 				65D18EEF26D695FB00237E73 /* Slide.xib in Resources */,
+				65AC132B26DE326A00F7F808 /* omenVelo.mp4 in Resources */,
+				65EB1BA026DD39C0007691EF /* CypherCibernetica.mp4 in Resources */,
+				65AC130526DE209300F7F808 /* JettCuchillas.mp4 in Resources */,
+				65AC135426DE439700F7F808 /* sageSana.mp4 in Resources */,
+				65AC133526DE347700F7F808 /* phoenixLlamarada.mp4 in Resources */,
+				65AC134B26DE41A000F7F808 /* reynaLasciva.mp4 in Resources */,
+				65AC137226DE6A5800F7F808 /* sovaDron.mp4 in Resources */,
+				65AC131F26DE30B200F7F808 /* killjoyTorreta.mp4 in Resources */,
+				65EB1BA826DD39E7007691EF /* BrimstoneOrbital.mp4 in Resources */,
+				65AC131E26DE30B200F7F808 /* kylljoyBotAlarma.mp4 in Resources */,
 				65EB1B6726DCC245007691EF /* AstraPulsoNova.mp4 in Resources */,
-				65EB1B7826DCC55D007691EF /* SovaFlechas.mp4 in Resources */,
+				65EB1B7826DCC55D007691EF /* sovaFlecha.mp4 in Resources */,
+				65AC137126DE6A5800F7F808 /* sovaFuria.mp4 in Resources */,
+				65EB1BA926DD39E7007691EF /* BrimstoneCortina.mp4 in Resources */,
+				65AC133426DE347700F7F808 /* phoenixBolaCurva.mp4 in Resources */,
+				65AC135626DE439700F7F808 /* sageBarrera.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
