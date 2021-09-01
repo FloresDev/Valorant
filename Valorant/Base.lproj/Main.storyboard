@@ -163,7 +163,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAw-fn-PAz">
                                     <rect key="frame" x="8" y="14" width="398" height="33"/>
                                     <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="33"/>
-                                    <color key="textColor" red="0.87036710939999995" green="0.22383451309999999" blue="0.24298871389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" name="TextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -250,13 +250,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="345"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="znc-yw-sHw">
-                                                                <rect key="frame" x="22" y="122" width="162" height="157"/>
+                                                                <rect key="frame" x="22" y="122" width="170.5" height="165"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="znc-yw-sHw" secondAttribute="height" multiplier="162:157" id="ALH-g1-fKT"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-en-g99">
-                                                                <rect key="frame" x="8" y="295" width="398" height="50"/>
+                                                                <rect key="frame" x="8" y="303" width="398" height="42"/>
                                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="39"/>
                                                                 <color key="textColor" red="0.8862745098" green="0.87058823529999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -264,7 +264,7 @@
                                                                 <size key="shadowOffset" width="5" height="3"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gA-xu-jf4">
-                                                                <rect key="frame" x="22" y="287" width="35.5" height="21"/>
+                                                                <rect key="frame" x="22" y="295" width="35.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="21"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -273,9 +273,9 @@
                                                                 </variation>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sPZ-rW-2cp">
-                                                                <rect key="frame" x="8" y="96" width="398" height="183"/>
+                                                                <rect key="frame" x="8" y="31" width="341.5" height="256"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="sPZ-rW-2cp" secondAttribute="height" multiplier="398:183" id="Za2-VH-hA2"/>
+                                                                    <constraint firstAttribute="width" secondItem="sPZ-rW-2cp" secondAttribute="height" multiplier="4:3" id="cfM-yA-4qh"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
@@ -286,7 +286,7 @@
                                                             </constraint>
                                                             <constraint firstItem="znc-yw-sHw" firstAttribute="top" secondItem="Mjr-QR-0um" secondAttribute="top" constant="122" id="BiG-Fb-IqQ"/>
                                                             <constraint firstItem="znc-yw-sHw" firstAttribute="leading" secondItem="Mjr-QR-0um" secondAttribute="leading" constant="22" id="FDZ-IK-7xM"/>
-                                                            <constraint firstItem="sPZ-rW-2cp" firstAttribute="top" secondItem="Mjr-QR-0um" secondAttribute="top" constant="96" id="Hn8-p0-ZQz"/>
+                                                            <constraint firstItem="sPZ-rW-2cp" firstAttribute="top" secondItem="Mjr-QR-0um" secondAttribute="top" constant="31" id="Hn8-p0-ZQz"/>
                                                             <constraint firstItem="6gA-xu-jf4" firstAttribute="top" secondItem="sPZ-rW-2cp" secondAttribute="bottom" constant="8" symbolic="YES" id="Rja-6b-ILR"/>
                                                             <constraint firstItem="kf4-en-g99" firstAttribute="leading" secondItem="Mjr-QR-0um" secondAttribute="leading" constant="8" id="UWF-C2-tOM"/>
                                                             <constraint firstItem="6gA-xu-jf4" firstAttribute="top" secondItem="znc-yw-sHw" secondAttribute="bottom" constant="8" symbolic="YES" id="ZG5-HP-oyb"/>
@@ -340,7 +340,7 @@
                                                     </wkWebView>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVl-UP-Yg5">
                                                         <rect key="frame" x="8" y="361" width="398" height="20.5"/>
-                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -856,7 +856,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DD3-yZ-dLU"/>
-                        <color key="backgroundColor" red="0.13799345490000001" green="0.1608571708" blue="0.18842223289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="CellBackground"/>
                         <constraints>
                             <constraint firstItem="YKb-ke-6nk" firstAttribute="trailing" secondItem="DD3-yZ-dLU" secondAttribute="trailing" id="0bG-7M-eUo"/>
                             <constraint firstItem="Haf-pH-IC5" firstAttribute="leading" secondItem="DD3-yZ-dLU" secondAttribute="leading" constant="20" id="1ea-Pa-loW"/>
@@ -1642,29 +1642,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFA-AV-JLd">
-                                                <rect key="frame" x="35" y="439" width="344" height="35"/>
+                                                <rect key="frame" x="35" y="508" width="344" height="35"/>
                                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" red="0.78446823359999995" green="0.28529229760000002" blue="0.32422125340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-Vs-VVi">
-                                                <rect key="frame" x="8" y="482" width="398" height="21.5"/>
+                                                <rect key="frame" x="8" y="551" width="398" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="-1" height="0.0"/>
                                             </label>
-                                            <view autoresizesSubviews="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1hW-QY-ArR">
-                                                <rect key="frame" x="8" y="181" width="398" height="250"/>
-                                                <color key="backgroundColor" name="TextColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="1hW-QY-ArR" secondAttribute="height" multiplier="199:125" id="PgJ-hW-8ZY"/>
-                                                </constraints>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <nil key="backgroundColor"/>
-                                                </variation>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-b5-u0M">
                                                 <rect key="frame" x="8" y="100" width="398" height="46"/>
                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="43"/>
@@ -1673,6 +1663,16 @@
                                                 <color key="shadowColor" red="0.78446823359999995" green="0.28529229760000002" blue="0.32422125340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <size key="shadowOffset" width="5" height="3"/>
                                             </label>
+                                            <view autoresizesSubviews="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1hW-QY-ArR">
+                                                <rect key="frame" x="8" y="216" width="398" height="250"/>
+                                                <color key="backgroundColor" name="TextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1hW-QY-ArR" secondAttribute="height" multiplier="199:125" id="PgJ-hW-8ZY"/>
+                                                </constraints>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <nil key="backgroundColor"/>
+                                                </variation>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1696,10 +1696,10 @@
                                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                                             </constraint>
                                             <constraint firstAttribute="trailing" secondItem="pFA-AV-JLd" secondAttribute="trailing" constant="35" id="d1g-8X-WrD"/>
-                                            <constraint firstItem="pFA-AV-JLd" firstAttribute="top" secondItem="1hW-QY-ArR" secondAttribute="bottom" constant="8" id="gaL-Ym-9Lf">
+                                            <constraint firstItem="pFA-AV-JLd" firstAttribute="top" secondItem="1hW-QY-ArR" secondAttribute="bottom" constant="42" id="gaL-Ym-9Lf">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="48"/>
                                             </constraint>
-                                            <constraint firstItem="1hW-QY-ArR" firstAttribute="top" secondItem="0r7-b5-u0M" secondAttribute="bottom" constant="35" id="k1s-p2-sB1">
+                                            <constraint firstItem="1hW-QY-ArR" firstAttribute="top" secondItem="0r7-b5-u0M" secondAttribute="bottom" constant="70" id="k1s-p2-sB1">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="26"/>
                                             </constraint>
                                             <constraint firstItem="0r7-b5-u0M" firstAttribute="top" secondItem="xz7-z3-yrA" secondAttribute="top" constant="100" id="rMy-32-QqW"/>
@@ -1718,7 +1718,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qqq-gV-SGl"/>
-                        <color key="backgroundColor" red="0.13799345490000001" green="0.1608571708" blue="0.18842223289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="CellBackground"/>
                         <constraints>
                             <constraint firstItem="YN4-s9-Uyg" firstAttribute="top" secondItem="2Lj-Zw-QNh" secondAttribute="top" id="GFB-Rn-Rad"/>
                             <constraint firstItem="RyN-8H-DpU" firstAttribute="trailing" secondItem="Qqq-gV-SGl" secondAttribute="trailing" id="HgK-uc-CkO"/>
@@ -1756,7 +1756,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalle de versión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3u-ch-4JE">
                                 <rect key="frame" x="20" y="124" width="374" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <color key="textColor" red="0.87036710939999995" green="0.22383451309999999" blue="0.24298871389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
@@ -1780,8 +1780,8 @@
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="url politica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP3-Jo-YNo">
-                                <rect key="frame" x="20" y="240.5" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="valoranthound-privacidad.epizy.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP3-Jo-YNo">
+                                <rect key="frame" x="20" y="240.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.8862745098" green="0.87058823529999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1789,8 +1789,8 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="url soporte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-mk-i6r">
-                                <rect key="frame" x="20" y="269" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="valoranthound-soporte.42web.io" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-mk-i6r">
+                                <rect key="frame" x="20" y="269.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.8862745098" green="0.87058823529999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1799,7 +1799,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aviso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-JV-CHR">
-                                <rect key="frame" x="20" y="322.5" width="374" height="26.5"/>
+                                <rect key="frame" x="20" y="323" width="374" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1808,7 +1808,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-Lq-ejZ">
-                                <rect key="frame" x="20" y="351.5" width="374" height="115"/>
+                                <rect key="frame" x="20" y="352" width="374" height="115"/>
                                 <string key="text">Valorant Hound es un producto no oficial, es una aplicación gratuita hecha por fans y NO está afiliada, avalada o con soporte de Riot Games. Los personajes y nombres son una marca de registrada de Riot Game. No se intenta infringir derechos de copyright.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.8862745098" green="0.87058823529999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -1819,7 +1819,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i4j-e0-1LR"/>
-                        <color key="backgroundColor" name="CellBackground"/>
+                        <color key="backgroundColor" red="0.13799345490000001" green="0.1608571708" blue="0.18842223289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i4j-e0-1LR" firstAttribute="trailing" secondItem="NIg-JV-CHR" secondAttribute="trailing" constant="20" id="0ej-cg-CTm"/>
                             <constraint firstItem="NIg-JV-CHR" firstAttribute="top" secondItem="GZt-mk-i6r" secondAttribute="bottom" constant="33" id="9yp-fo-u2W"/>
@@ -1955,7 +1955,7 @@
         <scene sceneID="STE-67-QDT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3UD-K7-nx5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="GHx-4Z-fKe"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homes" selectedImage="homes" id="GHx-4Z-fKe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5o4-9W-gFK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1985,7 +1985,7 @@
         <image name="fondoDetalle" width="172" height="172"/>
         <image name="gunIcon" width="32" height="21"/>
         <image name="head" width="1416" height="672"/>
-        <image name="home" width="32" height="26"/>
+        <image name="homes" width="32" height="26"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="legs" width="1416" height="672"/>
         <image name="map" catalog="system" width="128" height="110"/>
@@ -1993,14 +1993,11 @@
         <image name="presentation3.gif" width="637" height="358"/>
         <image name="valorant-generacion-xbox" width="1369" height="1077"/>
         <namedColor name="CellBackground">
-            <color red="0.19599999487400055" green="0.19900000095367432" blue="0.23800000548362732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.062745098040000002" green="0.094117647060000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.92400002479553223" green="0.3059999942779541" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
