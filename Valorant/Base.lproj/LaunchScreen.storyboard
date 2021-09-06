@@ -20,8 +20,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="0.19638538359999999" green="0.19913166760000001" blue="0.2378860116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIT" translatesAutoresizingMaskIntoConstraints="NO" id="oWM-Mm-Mkg">
-                                <rect key="frame" x="14" y="0.0" width="386" height="259"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotrans" translatesAutoresizingMaskIntoConstraints="NO" id="oWM-Mm-Mkg">
+                                <rect key="frame" x="14" y="335" width="386" height="259"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oWM-Mm-Mkg" secondAttribute="height" multiplier="386:259" id="QkE-Kg-ld5"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oWM-Mm-Mkg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FN6-7j-nP1"/>
+                            <constraint firstItem="oWM-Mm-Mkg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="335" id="FN6-7j-nP1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LLn-lw-fcG" secondAttribute="bottom" constant="-34" id="GDc-Tz-CY7"/>
                             <constraint firstItem="LLn-lw-fcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IL9-MC-01l"/>
                             <constraint firstItem="LLn-lw-fcG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="NdA-u1-ZeV"/>
@@ -46,8 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TIT" width="990" height="415"/>
         <image name="cov" width="236" height="512"/>
+        <image name="logotrans" width="613" height="490"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
