@@ -110,7 +110,7 @@
 /* Begin PBXFileReference section */
 		6526518E261F4E6100537FC8 /* AbilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityViewController.swift; sourceTree = "<group>"; };
 		6556BF87261CFE020064B29D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		6560FC22261B6E8000E222FC /* Valorant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valorant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6560FC22261B6E8000E222FC /* Valor-Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Valor-Ant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6560FC25261B6E8000E222FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6560FC27261B6E8000E222FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6560FC29261B6E8000E222FC /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		6560FC19261B6E8000E222FC = {
 			isa = PBXGroup;
 			children = (
-				6560FC24261B6E8000E222FC /* Valorant */,
+				6560FC24261B6E8000E222FC /* Valor-Ant */,
 				6560FC23261B6E8000E222FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -232,12 +232,12 @@
 		6560FC23261B6E8000E222FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6560FC22261B6E8000E222FC /* Valorant.app */,
+				6560FC22261B6E8000E222FC /* Valor-Ant.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6560FC24261B6E8000E222FC /* Valorant */ = {
+		6560FC24261B6E8000E222FC /* Valor-Ant */ = {
 			isa = PBXGroup;
 			children = (
 				CF20E11326DD2998004A92BE /* presentation3.gif */,
@@ -276,7 +276,7 @@
 				6560FC33261B6E8400E222FC /* Info.plist */,
 				CFF2CB2726D809C100742B26 /* Valorant Font.ttf */,
 			);
-			path = Valorant;
+			path = "Valor-Ant";
 			sourceTree = "<group>";
 		};
 		65770E7526D8E59C0096A343 /* Videos */ = {
@@ -482,9 +482,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6560FC21261B6E8000E222FC /* Valorant */ = {
+		6560FC21261B6E8000E222FC /* Valor-Ant */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6560FC36261B6E8400E222FC /* Build configuration list for PBXNativeTarget "Valorant" */;
+			buildConfigurationList = 6560FC36261B6E8400E222FC /* Build configuration list for PBXNativeTarget "Valor-Ant" */;
 			buildPhases = (
 				6560FC1E261B6E8000E222FC /* Sources */,
 				6560FC1F261B6E8000E222FC /* Frameworks */,
@@ -494,9 +494,9 @@
 			);
 			dependencies = (
 			);
-			name = Valorant;
+			name = "Valor-Ant";
 			productName = Valorant;
-			productReference = 6560FC22261B6E8000E222FC /* Valorant.app */;
+			productReference = 6560FC22261B6E8000E222FC /* Valor-Ant.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -513,7 +513,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6560FC1D261B6E8000E222FC /* Build configuration list for PBXProject "Valorant" */;
+			buildConfigurationList = 6560FC1D261B6E8000E222FC /* Build configuration list for PBXProject "Valor-Ant" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -526,7 +526,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6560FC21261B6E8000E222FC /* Valorant */,
+				6560FC21261B6E8000E222FC /* Valor-Ant */,
 			);
 		};
 /* End PBXProject section */
@@ -791,14 +791,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GB6SK42NZ3;
 				INFOPLIST_FILE = Valorant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = cev.Valorant;
+				MARKETING_VERSION = 1.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = es.daniel.ValorantHound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -811,14 +811,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GB6SK42NZ3;
 				INFOPLIST_FILE = Valorant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = cev.Valorant;
+				MARKETING_VERSION = 1.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = es.daniel.ValorantHound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -828,7 +828,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6560FC1D261B6E8000E222FC /* Build configuration list for PBXProject "Valorant" */ = {
+		6560FC1D261B6E8000E222FC /* Build configuration list for PBXProject "Valor-Ant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6560FC34261B6E8400E222FC /* Debug */,
@@ -837,7 +837,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6560FC36261B6E8400E222FC /* Build configuration list for PBXNativeTarget "Valorant" */ = {
+		6560FC36261B6E8400E222FC /* Build configuration list for PBXNativeTarget "Valor-Ant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6560FC37261B6E8400E222FC /* Debug */,

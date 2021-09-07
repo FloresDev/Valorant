@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6560FC21261B6E8000E222FC"
-               BuildableName = "Valorant.app"
-               BlueprintName = "Valorant"
-               ReferencedContainer = "container:Valorant.xcodeproj">
+               BuildableName = "Valor-Ant.app"
+               BlueprintName = "Valor-Ant"
+               ReferencedContainer = "container:Valor-Ant.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6560FC21261B6E8000E222FC"
-            BuildableName = "Valorant.app"
-            BlueprintName = "Valorant"
-            ReferencedContainer = "container:Valorant.xcodeproj">
+            BuildableName = "Valor-Ant.app"
+            BlueprintName = "Valor-Ant"
+            ReferencedContainer = "container:Valor-Ant.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6560FC21261B6E8000E222FC"
-            BuildableName = "Valorant.app"
-            BlueprintName = "Valorant"
-            ReferencedContainer = "container:Valorant.xcodeproj">
+            BuildableName = "Valor-Ant.app"
+            BlueprintName = "Valor-Ant"
+            ReferencedContainer = "container:Valor-Ant.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
